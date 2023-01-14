@@ -52,6 +52,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ObjectCollider: {fileID: 3003145368939989050}
   m_ObjectCollider2: {fileID: 7834785838617561188}
+  OpenSoundEffect: {fileID: 1747567267099290711, guid: 03cdbd237de24ec47a7045a7929769e5, type: 3}
+  CloseSoundEffect: {fileID: 6458758312047536834, guid: 0cb1414b65ba1a84c80a3c4e7f2fbe07, type: 3}
 --- !u!95 &1910004107865989874
 Animator:
   serializedVersion: 5

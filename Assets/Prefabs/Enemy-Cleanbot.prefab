@@ -7,13 +7,61 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1730356999287081404, guid: 06326dae11f7cd448844974744ddddc5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1730356999287081404, guid: 06326dae11f7cd448844974744ddddc5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1730356999287081404, guid: 06326dae11f7cd448844974744ddddc5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2073341359134418784, guid: 06326dae11f7cd448844974744ddddc5, type: 3}
       propertyPath: m_Name
       value: Enemy-Cleanbot
       objectReference: {fileID: 0}
+    - target: {fileID: 3463336080007244305, guid: 06326dae11f7cd448844974744ddddc5, type: 3}
+      propertyPath: m_Size.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3463336080007244305, guid: 06326dae11f7cd448844974744ddddc5, type: 3}
+      propertyPath: m_Size.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3463336080007244305, guid: 06326dae11f7cd448844974744ddddc5, type: 3}
+      propertyPath: m_Size.z
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3463336080007244305, guid: 06326dae11f7cd448844974744ddddc5, type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3463336080007244305, guid: 06326dae11f7cd448844974744ddddc5, type: 3}
+      propertyPath: m_Center.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3463336080007244305, guid: 06326dae11f7cd448844974744ddddc5, type: 3}
+      propertyPath: m_Center.z
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3463336080007244305, guid: 06326dae11f7cd448844974744ddddc5, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3920090427555415232, guid: 06326dae11f7cd448844974744ddddc5, type: 3}
       propertyPath: m_Radius
       value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3920090427555415232, guid: 06326dae11f7cd448844974744ddddc5, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3920090427555415232, guid: 06326dae11f7cd448844974744ddddc5, type: 3}
+      propertyPath: m_Center.y
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4086547789732317198, guid: 06326dae11f7cd448844974744ddddc5, type: 3}
       propertyPath: m_Mesh
@@ -116,7 +164,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.6550293
-  m_Speed: 3.5
+  m_Speed: 2
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -125,6 +173,6 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 0.8729305
-  m_BaseOffset: 0.43646526
+  m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4

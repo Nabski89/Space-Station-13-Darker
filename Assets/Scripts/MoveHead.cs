@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class MoveHead : MonoBehaviour
 {
-   float xRotation = 0f;
+    float xRotation = 0f;
+
+
     // Start is called before the first frame update
     void Start()
     {
+        Cursor.lockState = CursorLockMode.Locked;
 
     }
 
@@ -16,10 +19,10 @@ public class MoveHead : MonoBehaviour
     {
         float MouseY = Input.GetAxis("Mouse Y");
 
-        xRotation -= MouseY*1.5f;
-//        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+        xRotation -= MouseY * 1.5f;
+        //        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
-        transform.localRotation = Quaternion.Euler(Mathf.Clamp(xRotation, -45f, 45f), 0f, 0f);
+        transform.localRotation = Quaternion.Euler(Mathf.Clamp(xRotation, -70f, 70f), 0f, 0f);
     }
 
 

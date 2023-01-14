@@ -10,6 +10,8 @@ public class DoorScript : MonoBehaviour
     public Collider m_ObjectCollider2;
     NavMeshObstacle Blocker;
     bool IsOpenStatus = false;
+    public GameObject OpenSoundEffect;
+    public GameObject CloseSoundEffect;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +34,12 @@ public class DoorScript : MonoBehaviour
         Blocker.enabled = false;
         m_ObjectCollider.isTrigger = true;
         m_ObjectCollider2.isTrigger = true;
+
+        if (OpenSoundEffect != null)
+        {
+            GameObject OpenSE = Instantiate(OpenSoundEffect);
+            Destroy(OpenSE, 5);
+        }
     }
 
     public void Close()
@@ -42,5 +50,11 @@ public class DoorScript : MonoBehaviour
         Blocker.enabled = true;
         m_ObjectCollider.isTrigger = false;
         m_ObjectCollider2.isTrigger = false;
+
+        if (CloseSoundEffect != null)
+      {
+            GameObject CloseSE = Instantiate(CloseSoundEffect);
+            Destroy(CloseSE, 5);
+        }
     }
 }
