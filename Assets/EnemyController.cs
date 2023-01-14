@@ -12,7 +12,6 @@ public class EnemyController : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         agent.SetDestination(Vector3.zero);
-
     }
 
     // Update is called once per frame
@@ -20,7 +19,7 @@ public class EnemyController : MonoBehaviour
     {
         if (player != null)
         {
-            transform.LookAt(player);
+            transform.LookAt(new Vector3(player.position.x, 0, player.position.z));
             agent.SetDestination(player.transform.position);
         }
     }
@@ -33,4 +32,6 @@ public class EnemyController : MonoBehaviour
             player = Player.transform;
         }
     }
+
+
 }
