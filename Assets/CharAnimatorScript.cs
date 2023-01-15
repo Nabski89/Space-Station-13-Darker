@@ -12,6 +12,7 @@ public class CharAnimatorScript : MonoBehaviour
     {
         mAnimator = GetComponent<Animator>();
         rb = GetComponentInParent<Rigidbody>();
+        mAnimator.SetTrigger("AxeAttack");
     }
     void FixedUpdate()
     {
@@ -47,7 +48,7 @@ public class CharAnimatorScript : MonoBehaviour
     }
         public void Attack()
     {
-        mAnimator.SetTrigger("StopMove");
+        mAnimator.SetTrigger("AxeAttack");
         moving = false;
     }
 }
