@@ -4,15 +4,31 @@ using UnityEngine;
 
 public class AutoLight : MonoBehaviour
 {
-    // Start is called before the first frame update
+    int CheckCounter = -1;
+    RaycastHit hitWall;
     void Start()
     {
-        
+        AGAIN();
     }
 
-    // Update is called once per frame
-    void Update()
+    void AGAIN()
     {
-        
+        CheckCounter += 1;
+        transform.Rotate(0, 90, 0, Space.Self);
+        if (CheckCounter > 4)
+            Destroy(this);
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.back), out hitWall, .75f))
+        {
+            if (hitWall.transform.name == "Wall")
+            {
+                Destroy(this);
+            }
+            else
+                AGAIN();
+        }
+        else
+        {
+            AGAIN();
+        }
     }
 }
