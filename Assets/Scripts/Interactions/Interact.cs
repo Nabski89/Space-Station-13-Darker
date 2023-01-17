@@ -9,11 +9,13 @@ public class Interact : MonoBehaviour
     bool KeyDownEvent = false;
     public GameObject UITextObj;
     public TMPro.TextMeshProUGUI UIText;
+    CharController CharacterController;
 
     // Start is called before the first frame update
     void Start()
     {
         UIText = UITextObj.GetComponent<TMPro.TextMeshProUGUI>();
+        CharacterController = gameObject.GetComponentInParent<CharController>();
     }
 
     // Keydown outside of update can miss calls
@@ -46,8 +48,9 @@ public class Interact : MonoBehaviour
                 if (KeyDownEvent == true)
                 {
                     KeyDownEvent = false;
+                    CharacterController.busy = true;
                     Debug.Log("Pressed the interact Button");
-                    InteractObject.Interact(this);
+                    InteractObject.Interact(this, CharacterController);
                 }
             }
         }

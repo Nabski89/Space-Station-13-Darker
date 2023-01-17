@@ -9,6 +9,7 @@ public class CharController : MonoBehaviour
     //*1
     public float horizontalSpeed = 2.0F;
     public float verticalSpeed = 2.0F;
+    public bool busy = false;
 
     void Start()
     {
@@ -19,10 +20,13 @@ public class CharController : MonoBehaviour
 
     void Update()
     {
-        if (rb.velocity.x < Mathf.Abs(10))
-            rb.AddForce(transform.forward * Input.GetAxis("Vertical") * playerSpeed);
-        if (rb.velocity.z < Mathf.Abs(10))
-            rb.AddForce(transform.right * Input.GetAxis("Horizontal") * playerSpeed);
+        if (busy == false)
+        {
+            if (rb.velocity.x < Mathf.Abs(10))
+                rb.AddForce(transform.forward * Input.GetAxis("Vertical") * playerSpeed);
+            if (rb.velocity.z < Mathf.Abs(10))
+                rb.AddForce(transform.right * Input.GetAxis("Horizontal") * playerSpeed);
+        }
         //*1
         float h = horizontalSpeed * Input.GetAxis("Mouse X");
         //     float v = verticalSpeed * Input.GetAxis("Mouse Y");

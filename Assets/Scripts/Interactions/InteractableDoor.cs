@@ -5,8 +5,9 @@ using UnityEngine;
 public class InteractableDoor : MonoBehaviour, IInteractable
 {
 
-    public void Interact(Interact source)
+    public void Interact(Interact source, CharController Character)
     {
+        Character.busy = false;
         this.GetComponentInParent<DoorScript>().DoorInteract();
     }
 }

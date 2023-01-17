@@ -283,6 +283,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4391948663348540244, guid: 238b9add150eed949b6187ca1e4ab62a, type: 3}
+      propertyPath: m_Name
+      value: Left
+      objectReference: {fileID: 0}
+    - target: {fileID: -4391948663348540244, guid: 238b9add150eed949b6187ca1e4ab62a, type: 3}
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
@@ -320,6 +324,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 238b9add150eed949b6187ca1e4ab62a, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1513502966390151522, guid: 238b9add150eed949b6187ca1e4ab62a, type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1513502966390151522, guid: 238b9add150eed949b6187ca1e4ab62a, type: 3}
@@ -365,6 +373,10 @@ PrefabInstance:
     - target: {fileID: 5866666021909216657, guid: 238b9add150eed949b6187ca1e4ab62a, type: 3}
       propertyPath: m_CullingMode
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7512683188018347039, guid: 238b9add150eed949b6187ca1e4ab62a, type: 3}
+      propertyPath: m_Name
+      value: Right
       objectReference: {fileID: 0}
     - target: {fileID: 7512683188018347039, guid: 238b9add150eed949b6187ca1e4ab62a, type: 3}
       propertyPath: m_Layer
@@ -424,7 +436,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94f48cfd470e8bf42b0fcc000b59068b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SoundEffect: {fileID: 0}
 --- !u!1 &7095330850163195539 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4391948663348540244, guid: 238b9add150eed949b6187ca1e4ab62a, type: 3}
@@ -471,4 +482,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94f48cfd470e8bf42b0fcc000b59068b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SoundEffect: {fileID: 0}
