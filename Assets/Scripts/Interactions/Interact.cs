@@ -60,6 +60,6 @@ public class Interact : MonoBehaviour
             //     Debug.Log("Did not Hit an interactable");
             UITextObj.SetActive(false);
         }
-
+        KeyDownEvent = false;
     }
 }

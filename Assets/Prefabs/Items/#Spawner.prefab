@@ -45,11 +45,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnList:
-  - {fileID: 3855945886807406794, guid: 20289aacb6fedd447ba207938e21da4a, type: 3}
-  - {fileID: 3855945886807406794, guid: 20289aacb6fedd447ba207938e21da4a, type: 3}
-  - {fileID: 8323425777869583868, guid: 38c1e379d4687e24eb6a1d8a09d609f5, type: 3}
-  - {fileID: 3438822791061368528, guid: 7d83652590e259a48af6c339c63e4b17, type: 3}
-  - {fileID: 7982613275937890053, guid: 8d8177226e69e7246bbd497bef4ab012, type: 3}
-  - {fileID: 7982613275937890053, guid: 8d8177226e69e7246bbd497bef4ab012, type: 3}
-  - {fileID: 7453419450318373152, guid: ac1826da9ef5d414da7689e2c392768f, type: 3}
-  - {fileID: 6826462516546562060, guid: c43b30a73dc129d489a061ffbf95257f, type: 3}
+  - {fileID: 5798888261371818940, guid: 0548453e591dda941a65a11b10c93d59, type: 3}
+  - {fileID: 1983538271429886534, guid: 7203623f7e74b3743b68e59c6537e08e, type: 3}
+  SpawnChance: 100
