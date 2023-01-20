@@ -12,7 +12,6 @@ public class CharAnimatorScript : MonoBehaviour
     {
         mAnimator = GetComponent<Animator>();
         rb = GetComponentInParent<Rigidbody>();
-        mAnimator.SetTrigger("AxeAttack");
     }
     void FixedUpdate()
     {
