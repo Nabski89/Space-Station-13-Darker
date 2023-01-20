@@ -18,10 +18,11 @@ public class EnemyWeapon : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("EnemyAttackedPlayer");
+
         CharStats HPCheck = other.GetComponent<CharStats>();
         if (HPCheck != null)
         {
+            Debug.Log(transform.name + " AttackedPlayer");
             HPCheck.HP -= 10;
             enabled = false;
         }

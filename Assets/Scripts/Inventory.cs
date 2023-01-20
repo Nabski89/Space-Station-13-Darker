@@ -40,7 +40,12 @@ public class Inventory : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q))
         {
             item.gameObject.SetActive(true);
-            item.transform.position = this.transform.position + Vector3.up * .5f + this.transform.forward * .5f; // xd i love hardcoding
+            item.transform.position = this.transform.position + Vector3.up * 1.5f + this.transform.forward * .5f; // xd i love hardcoding
+            Rigidbody rb = item.gameObject.AddComponent<Rigidbody>();
+            rb.AddForce(this.transform.forward * 300+this.transform.up*100);
+            item.GetComponent<Collider>().isTrigger = false;
+
+
             item.transform.rotation = Quaternion.identity;
             item.transform.parent = null;
             Items[ActiveSlot] = null;

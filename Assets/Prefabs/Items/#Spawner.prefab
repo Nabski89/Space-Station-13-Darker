@@ -47,4 +47,5 @@ MonoBehaviour:
   SpawnList:
   - {fileID: 5798888261371818940, guid: 0548453e591dda941a65a11b10c93d59, type: 3}
   - {fileID: 1983538271429886534, guid: 7203623f7e74b3743b68e59c6537e08e, type: 3}
+  SpawnHolder: {fileID: 5413844582516395969}
   SpawnChance: 100

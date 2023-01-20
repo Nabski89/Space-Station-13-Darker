@@ -8,10 +8,12 @@ public class EnemyController : MonoBehaviour
     // Start is called before the first frame update
     Transform player;
     NavMeshAgent agent;
+    bool ForgetPlayer = false;
+    float ForgetPlayerTimer = 10;
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        agent.SetDestination(Vector3.zero);
+        //     agent.SetDestination(Vector3.zero);
     }
 
     // Update is called once per frame
@@ -21,6 +23,18 @@ public class EnemyController : MonoBehaviour
         {
             transform.LookAt(new Vector3(player.position.x, 0, player.position.z));
             agent.SetDestination(player.transform.position);
+
+            if (ForgetPlayer == true)
+            {
+                ForgetPlayerTimer -= 1 * Time.deltaTime;
+                if (ForgetPlayerTimer < 0)
+                {
+                    player = null;
+                    ForgetPlayerTimer = 10;
+                    agent.ResetPath();
+                }
+            }
+
         }
     }
 
@@ -30,8 +44,16 @@ public class EnemyController : MonoBehaviour
         if (Player != null)
         {
             player = Player.transform;
+            ForgetPlayer = false;
         }
     }
 
-
+    private void OnTriggerExit(Collider other)
+    {
+        AggroController Player = other.GetComponent<AggroController>();
+        if (Player != null)
+        {
+            ForgetPlayer = true;
+        }
+    }
 }
