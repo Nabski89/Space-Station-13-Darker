@@ -507,7 +507,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Assistant
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1075,7 +1075,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Virologist
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1210,7 +1210,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Options
+  m_text: Character Select
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1578,6 +1578,7 @@ GameObject:
   - component: {fileID: 1580618072}
   - component: {fileID: 1580618071}
   - component: {fileID: 1580618070}
+  - component: {fileID: 1580618073}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -1650,7 +1651,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 490360300}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1580618073}
+        m_TargetAssemblyTypeName: SelectSpawnLocation, Assembly-CSharp
+        m_MethodName: SelectLocation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1580618071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1689,6 +1702,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1580618068}
   m_CullTransparentMesh: 1
+--- !u!114 &1580618073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580618068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f440f1bb9fdb574aab91c52223e6198, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartLocation: {x: -16, y: 0, z: 45}
 --- !u!1 &1970789410
 GameObject:
   m_ObjectHideFlags: 0
@@ -1747,7 +1773,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Engineer
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1836,6 +1862,7 @@ GameObject:
   - component: {fileID: 2047990873}
   - component: {fileID: 2047990872}
   - component: {fileID: 2047990871}
+  - component: {fileID: 2047990874}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -1908,7 +1935,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 490360300}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2047990874}
+        m_TargetAssemblyTypeName: SelectSpawnLocation, Assembly-CSharp
+        m_MethodName: SelectLocation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2047990872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1947,6 +1986,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2047990869}
   m_CullTransparentMesh: 1
+--- !u!114 &2047990874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047990869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f440f1bb9fdb574aab91c52223e6198, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartLocation: {x: 115, y: 0, z: 69}
 --- !u!1 &2101452146
 GameObject:
   m_ObjectHideFlags: 0
@@ -1959,6 +2011,7 @@ GameObject:
   - component: {fileID: 2101452150}
   - component: {fileID: 2101452149}
   - component: {fileID: 2101452148}
+  - component: {fileID: 2101452151}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -2031,7 +2084,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 490360300}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2101452151}
+        m_TargetAssemblyTypeName: SelectSpawnLocation, Assembly-CSharp
+        m_MethodName: SelectLocation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2101452149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2070,3 +2135,16 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2101452146}
   m_CullTransparentMesh: 1
+--- !u!114 &2101452151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101452146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f440f1bb9fdb574aab91c52223e6198, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartLocation: {x: -4, y: 0, z: 1}

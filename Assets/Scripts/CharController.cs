@@ -14,6 +14,7 @@ public class CharController : MonoBehaviour
     void Start()
     {
         //set the frame rate
+        transform.position = CharacterSelection.StartLocation;
         Application.targetFrameRate = 30;
         rb = GetComponent<Rigidbody>();
     }
