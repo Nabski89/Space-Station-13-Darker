@@ -143,7 +143,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
-  m_Range: 10
+  m_Range: 5
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -203,8 +203,10 @@ GameObject:
   - component: {fileID: 4281725314577649319}
   - component: {fileID: 961985967457470260}
   - component: {fileID: 1965925349441727624}
-  m_Layer: 0
-  m_Name: Cube
+  - component: {fileID: 4820789792638096171}
+  - component: {fileID: 6587866703809397675}
+  m_Layer: 8
+  m_Name: Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -275,3 +277,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4820789792638096171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8386000253397745820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 049092576dbd11c47b9899f83deceb5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LightBulb: {fileID: 1938999704532489023}
+--- !u!65 &6587866703809397675
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8386000253397745820}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5101048, y: 0.09198041, z: 0.09198025}
+  m_Center: {x: 0, y: 0, z: -0.4833681}
