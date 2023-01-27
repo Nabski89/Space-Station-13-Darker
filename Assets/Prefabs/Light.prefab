@@ -289,6 +289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 049092576dbd11c47b9899f83deceb5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ChanceLightOutPercent: 10
   LightBulb: {fileID: 1938999704532489023}
 --- !u!65 &6587866703809397675
 BoxCollider:

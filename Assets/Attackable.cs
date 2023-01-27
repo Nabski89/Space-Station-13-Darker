@@ -18,7 +18,7 @@ public class Attackable : MonoBehaviour
         if (HP < 0)
         {
             Die();
-                    }
+        }
     }
     void Die()
     {
@@ -32,10 +32,11 @@ public class Attackable : MonoBehaviour
         PlayerWeapon HitBy = other.GetComponent<PlayerWeapon>();
         if (HitBy != null)
         {
-            HP -= 1;
-            if (HitBy.OnHitSound != null)
-            Instantiate(HitBy.OnHitSound, transform.position, transform.rotation);
+            
+            if (HitBy.OnHitSound != null && HitBy.enabled == true)
+                Instantiate(HitBy.OnHitSound, transform.position, transform.rotation);
             HitBy.enabled = false;
+            HP -= 1;
         }
     }
 }

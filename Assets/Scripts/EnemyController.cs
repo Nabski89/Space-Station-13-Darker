@@ -10,6 +10,11 @@ public class EnemyController : MonoBehaviour
     NavMeshAgent agent;
     bool ForgetPlayer = false;
     float ForgetPlayerTimer = 10;
+
+    float AttackCycles;
+    float AttackCycleDefault;
+    float CycleTimer;
+    float CycleTimerDefault;
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -19,11 +24,25 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //if we have a target go after them
         if (player != null)
         {
             transform.LookAt(new Vector3(player.position.x, 0, player.position.z));
             agent.SetDestination(player.transform.position);
 
+
+            //attack cycling
+            CycleTimer -= 1 * Time.deltaTime;
+            if (CycleTimer < 0)
+            {
+                CycleTimer = CycleTimerDefault;
+                AttackCycles -= 1;
+                if (AttackCycles < 0)
+                {
+                    Attack();
+                }
+            }
+            //forgetting about the player when they are out of range
             if (ForgetPlayer == true)
             {
                 ForgetPlayerTimer -= 1 * Time.deltaTime;
@@ -55,5 +74,10 @@ public class EnemyController : MonoBehaviour
         {
             ForgetPlayer = true;
         }
+    }
+
+    void Attack()
+    {
+
     }
 }
