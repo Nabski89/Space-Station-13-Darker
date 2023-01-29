@@ -18,7 +18,7 @@ public class EnemyController : MonoBehaviour
     public GameObject Weapon;
     void Start()
     {
-        agent = GetComponent<NavMeshAgent>();
+        agent = GetComponentInParent<NavMeshAgent>();
         mAnimator = GetComponent<Animator>();
 
         //     agent.SetDestination(Vector3.zero);
@@ -28,10 +28,10 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
         //if we have a target go after them
-        //     if (player != null)
+        if (player != null)
         {
-            //     transform.LookAt(new Vector3(player.position.x, 0, player.position.z));
-            //   agent.SetDestination(player.transform.position);
+            transform.LookAt(new Vector3(player.position.x, 0, player.position.z));
+            agent.SetDestination(player.transform.position - (transform.forward * 1.5f));
 
             //attack cycling
             CycleTimer -= 1 * Time.deltaTime;
@@ -40,11 +40,11 @@ public class EnemyController : MonoBehaviour
 
                 CycleTimer = CycleTimerDefault;
                 AttackCycles -= 1;
-                if (AttackCycles < 0)
+                if (AttackCycles == 0)
                 {
                     Attack();
                 }
-                else
+                if (AttackCycles == 1)
                 {
                     if (mAnimator != null)
                         mAnimator.SetTrigger("Idle");
@@ -72,6 +72,7 @@ public class EnemyController : MonoBehaviour
         {
             player = Player.transform;
             ForgetPlayer = false;
+            AttackCycles = 2;
         }
     }
 

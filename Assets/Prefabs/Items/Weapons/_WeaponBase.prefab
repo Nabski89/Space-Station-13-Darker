@@ -114,6 +114,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnHitSound: {fileID: 3875662393096048094, guid: 8535082c8d770d1448e07aff96267927, type: 3}
   DamageModifier: 0
+  OriginalDamage: 15
+  DamageDealt: 0
 --- !u!1001 &369870964801165242
 PrefabInstance:
   m_ObjectHideFlags: 0

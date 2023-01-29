@@ -7,6 +7,7 @@ public class CharStats : MonoBehaviour
 {
     public float HPMax = 100;
     public float HP = 50;
+    public float CharDamageMod = 1.00f;
     bool DEAD = false;
     // Start is called before the first frame update
     void Start()

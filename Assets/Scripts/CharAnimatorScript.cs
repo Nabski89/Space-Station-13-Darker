@@ -45,11 +45,10 @@ public class CharAnimatorScript : MonoBehaviour
         mAnimator.SetTrigger("StopMove");
         moving = false;
     }
-        public void Attack()
+    public void Attack()
     {
         mAnimator.SetTrigger("AxeAttack");
-     //   mAnimator.SetTrigger("DaggerAttack");
-                Debug.Log("We Attacked WITH AN AXE");
+        //   mAnimator.SetTrigger("DaggerAttack");
         moving = false;
     }
 }

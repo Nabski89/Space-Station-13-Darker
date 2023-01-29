@@ -6,15 +6,11 @@ public class PlayerWeapon : MonoBehaviour
 {
     public GameObject OnHitSound;
     public float DamageModifier;
+    public float OriginalDamage;
+    public float DamageDealt;
     // Start is called before the first frame update
-    void Start()
+    public void UpdateDamage()
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        DamageDealt = OriginalDamage * GetComponentInParent<CharStats>().CharDamageMod;
     }
 }

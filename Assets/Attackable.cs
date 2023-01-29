@@ -26,17 +26,21 @@ public class Attackable : MonoBehaviour
         Destroy(gameObject);
     }
 
+//when the hitbox of a weapon hits something interesting, play a sound if able, and disable the hitbox so it doesn't double hit.
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("EnemyAttackedPlayer");
         PlayerWeapon HitBy = other.GetComponent<PlayerWeapon>();
         if (HitBy != null)
         {
-            
-            if (HitBy.OnHitSound != null && HitBy.enabled == true)
-                Instantiate(HitBy.OnHitSound, transform.position, transform.rotation);
-            HitBy.enabled = false;
-            HP -= 1;
+            if (HitBy.enabled == true)
+            {
+                if (HitBy.OnHitSound != null)
+                    Instantiate(HitBy.OnHitSound, transform.position, transform.rotation);
+                HitBy.UpdateDamage();
+                HP -= HitBy.DamageDealt;
+                Debug.Log("EnemyAttacked " + transform + " new HP:" + HP);
+                HitBy.enabled = false;
+            }
         }
     }
 }
