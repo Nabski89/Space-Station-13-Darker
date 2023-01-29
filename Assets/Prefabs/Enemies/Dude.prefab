@@ -2883,12 +2883,12 @@ GameObject:
   - component: {fileID: 2453644744331166762}
   - component: {fileID: 2767377183986039061}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &351318966079578231
 Transform:
   m_ObjectHideFlags: 0
@@ -4314,6 +4314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b72eb8f284c7e984cb9d91d0b375508d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Weapon: {fileID: 4056042422675502731}
 --- !u!54 &2414245925678234940
 Rigidbody:
   m_ObjectHideFlags: 0

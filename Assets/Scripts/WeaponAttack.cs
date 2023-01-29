@@ -25,8 +25,9 @@ public class WeaponAttack : MonoBehaviour
                   WeaponHitbox.enabled = true;
               }
               */
-            AnimateReference.Attack();
             Debug.Log("We Attacked");
+            AnimateReference.Attack();
+
         }
     }
 }

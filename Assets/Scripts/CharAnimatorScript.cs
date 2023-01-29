@@ -48,6 +48,8 @@ public class CharAnimatorScript : MonoBehaviour
         public void Attack()
     {
         mAnimator.SetTrigger("AxeAttack");
+     //   mAnimator.SetTrigger("DaggerAttack");
+                Debug.Log("We Attacked WITH AN AXE");
         moving = false;
     }
 }

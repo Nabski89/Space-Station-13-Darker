@@ -7,6 +7,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 509766656588691089, guid: 06326dae11f7cd448844974744ddddc5, type: 3}
+      propertyPath: m_Name
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 1444918462043302309, guid: 06326dae11f7cd448844974744ddddc5, type: 3}
+      propertyPath: Weapon
+      value: 
+      objectReference: {fileID: 8754025194454680336}
     - target: {fileID: 1730356999287081404, guid: 06326dae11f7cd448844974744ddddc5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -21,7 +29,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2073341359134418784, guid: 06326dae11f7cd448844974744ddddc5, type: 3}
       propertyPath: m_Name
-      value: Enemy-Cleanbot
+      value: _Cleanbot
       objectReference: {fileID: 0}
     - target: {fileID: 3463336080007244305, guid: 06326dae11f7cd448844974744ddddc5, type: 3}
       propertyPath: m_Size.x
@@ -190,3 +198,8 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!1 &8754025194454680336 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 509766656588691089, guid: 06326dae11f7cd448844974744ddddc5, type: 3}
+  m_PrefabInstance: {fileID: 9110647469041268097}
+  m_PrefabAsset: {fileID: 0}

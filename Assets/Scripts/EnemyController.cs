@@ -15,6 +15,7 @@ public class EnemyController : MonoBehaviour
     float AttackCycleDefault = 3;
     float CycleTimer;
     float CycleTimerDefault = 2;
+    public GameObject Weapon;
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -86,7 +87,13 @@ public class EnemyController : MonoBehaviour
     void Attack()
     {
         AttackCycles = AttackCycleDefault;
+        Invoke("Disarm", 1.0f);
+        Weapon.SetActive(true);
         if (mAnimator != null)
             mAnimator.SetTrigger("AxeAttack");
+    }
+    void Disarm()
+    {
+        Weapon.SetActive(false);
     }
 }
