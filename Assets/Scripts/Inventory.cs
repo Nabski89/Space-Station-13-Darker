@@ -37,7 +37,7 @@ public class Inventory : MonoBehaviour
     {
         var item = Items[ActiveSlot];
         if (item == null) return;
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetMouseButtonDown(1))
         {
             item.gameObject.SetActive(true);
             item.transform.position = this.transform.position + Vector3.up * 1.5f + this.transform.forward * .5f; // xd i love hardcoding

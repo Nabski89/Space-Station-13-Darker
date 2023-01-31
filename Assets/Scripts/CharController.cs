@@ -10,6 +10,9 @@ public class CharController : MonoBehaviour
     public float horizontalSpeed = 2.0F;
     public float verticalSpeed = 2.0F;
     public bool busy = false;
+    AbilityCooldown AbilityUI;
+    public float AbilityCooldown = 10;
+    public float AbilityCooldownCountdown = 10;
 
     void Start()
     {
@@ -32,6 +35,17 @@ public class CharController : MonoBehaviour
         float h = horizontalSpeed * Input.GetAxis("Mouse X");
         //     float v = verticalSpeed * Input.GetAxis("Mouse Y");
         transform.Rotate(0, h, 0);
+
+        if (AbilityCooldownCountdown > 0)
+            AbilityCooldownCountdown -= Time.deltaTime;
+
+
+        if (Input.GetKeyDown(KeyCode.Q) && AbilityCooldownCountdown <= 0)
+        {
+            Debug.Log("Used An Ability");
+            AbilityCooldownCountdown = AbilityCooldown;
+            AbilityUI.UseAbility();
+        }
     }
 }
 //*1
