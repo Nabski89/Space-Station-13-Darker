@@ -47,8 +47,19 @@ public class CharAnimatorScript : MonoBehaviour
     }
     public void Attack()
     {
-        mAnimator.SetTrigger("AxeAttack");
-        //   mAnimator.SetTrigger("DaggerAttack");
+        Item WeaponHeld = GetComponentInChildren<Item>();
+        if (WeaponHeld != null)
+        {
+            if (WeaponHeld.WeaponType == 0)
+                mAnimator.SetTrigger("AxeAttack");
+            if (WeaponHeld.WeaponType == 1)
+                mAnimator.SetTrigger("DaggerAttack");
+            if (WeaponHeld.WeaponType == 2)
+                mAnimator.SetTrigger("SwordAttack");
+        }
+        else
+            mAnimator.SetTrigger("AxeAttack");
+
         moving = false;
     }
 }

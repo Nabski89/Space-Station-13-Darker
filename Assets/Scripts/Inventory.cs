@@ -7,7 +7,7 @@ public class Inventory : MonoBehaviour
 {
     public const int MAX_SLOTS = 8;
 
-    [SerializeField] Transform HandPosition;
+    [SerializeField] GameObject[] HandPosition;
 
     public Item[] Items { get; } = new Item[MAX_SLOTS];
     public int ActiveSlot { get; private set; } = 0;
@@ -79,7 +79,7 @@ public class Inventory : MonoBehaviour
             item.gameObject.SetActive(isActive);
             if (isActive)
             {
-                item.transform.parent = HandPosition;
+                item.transform.parent = HandPosition[item.GetComponent<Item>().WeaponType].transform;
                 item.transform.localPosition = Vector3.zero;
                 item.transform.localRotation = Quaternion.identity;
             }
