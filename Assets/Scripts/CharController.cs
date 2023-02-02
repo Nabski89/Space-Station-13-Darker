@@ -10,9 +10,9 @@ public class CharController : MonoBehaviour
     public float horizontalSpeed = 2.0F;
     public float verticalSpeed = 2.0F;
     public bool busy = false;
-    AbilityCooldown AbilityUI;
     public float AbilityCooldown = 10;
     public float AbilityCooldownCountdown = 10;
+    public Abilities Ability;
 
     void Start()
     {
@@ -20,6 +20,7 @@ public class CharController : MonoBehaviour
         transform.position = CharacterSelection.StartLocation;
         Application.targetFrameRate = 30;
         rb = GetComponent<Rigidbody>();
+        Ability = GetComponentInChildren<Abilities>();
     }
 
     void Update()
@@ -39,12 +40,11 @@ public class CharController : MonoBehaviour
         if (AbilityCooldownCountdown > 0)
             AbilityCooldownCountdown -= Time.deltaTime;
 
-
+//use an ability in the abilities script
         if (Input.GetKeyDown(KeyCode.Q) && AbilityCooldownCountdown <= 0)
         {
-            Debug.Log("Used An Ability");
+            Ability.UseAbility();
             AbilityCooldownCountdown = AbilityCooldown;
-            AbilityUI.UseAbility();
         }
     }
 }

@@ -7,7 +7,11 @@ public class CharStats : MonoBehaviour
 {
     public float HPMax = 100;
     public float HP = 50;
+    public float HealOT = 5;
+    float HealingMod;
+    float HealOTMod;
     public float CharDamageMod = 1.00f;
+    public float CharDamageModTemp = 1.00f;
     bool DEAD = false;
     // Start is called before the first frame update
     void Start()
@@ -18,6 +22,13 @@ public class CharStats : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //delayed healing effects
+        if (HealOT > 0)
+        {
+            HP = Mathf.Min(HP + (HealOT * Time.deltaTime), HPMax);
+            HealOT -= Time.deltaTime;
+        }
+        //death tracking
         if (HP < 0)
         {
             Quaternion target = Quaternion.Euler(transform.rotation.x, transform.rotation.y, 45);
@@ -38,5 +49,9 @@ public class CharStats : MonoBehaviour
     void YouDiedAutoResetart()
     {
         SceneManager.LoadScene("TitleScene", LoadSceneMode.Single);
+    }
+    public void Heal(float HealAmount)
+    {
+        HP = Mathf.Min(HP + (HealAmount) + HealingMod, HPMax);
     }
 }

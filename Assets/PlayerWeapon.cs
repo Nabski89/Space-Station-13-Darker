@@ -11,6 +11,8 @@ public class PlayerWeapon : MonoBehaviour
     // Start is called before the first frame update
     public void UpdateDamage()
     {
-        DamageDealt = OriginalDamage * GetComponentInParent<CharStats>().CharDamageMod;
+        CharStats Character = GetComponentInParent<CharStats>();
+        DamageDealt = OriginalDamage * Character.CharDamageMod * Character.CharDamageModTemp;
+        Character.CharDamageModTemp = 1;
     }
 }
