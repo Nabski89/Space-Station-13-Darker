@@ -42,7 +42,7 @@ public class Inventory : MonoBehaviour
             item.gameObject.SetActive(true);
             item.transform.position = this.transform.position + Vector3.up * 1.5f + this.transform.forward * .5f; // xd i love hardcoding
             Rigidbody rb = item.gameObject.AddComponent<Rigidbody>();
-            rb.AddForce(this.transform.forward * 300+this.transform.up*100);
+            rb.AddForce(this.transform.forward * 300 + this.transform.up * 100);
             item.GetComponent<Collider>().isTrigger = false;
 
 
@@ -51,6 +51,14 @@ public class Inventory : MonoBehaviour
             Items[ActiveSlot] = null;
             OnInventoryUpdated();
         }
+    }
+    public void UseUpItem()
+    {
+        var item = Items[ActiveSlot];
+        if (item == null) return;
+        Destroy(item.gameObject);
+        Items[ActiveSlot] = null;
+        OnInventoryUpdated();
     }
 
     public void TryPickup(Item item)
@@ -69,7 +77,7 @@ public class Inventory : MonoBehaviour
         // If we hit this point, the inventory is full
     }
 
-    void OnInventoryUpdated()
+    public void OnInventoryUpdated()
     {
         for (int i = 0; i < MAX_SLOTS; i++)
         {
