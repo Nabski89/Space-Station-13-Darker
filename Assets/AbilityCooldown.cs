@@ -23,6 +23,7 @@ public class AbilityCooldown : MonoBehaviour
 
     public void UseAbility()
     {
+        //this is currently broken
         CooldownBar.GetComponent<Image>().color = NotRedy;
     }
 }

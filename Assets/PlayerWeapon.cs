@@ -12,7 +12,10 @@ public class PlayerWeapon : MonoBehaviour
     public void UpdateDamage()
     {
         CharStats Character = GetComponentInParent<CharStats>();
-        DamageDealt = OriginalDamage * Character.CharDamageMod * Character.CharDamageModTemp;
-        Character.CharDamageModTemp = 1;
+        if (Character != null)
+        {
+            DamageDealt = OriginalDamage * Character.CharDamageMod * Character.CharDamageModTemp;
+            Character.CharDamageModTemp = 1;
+        }
     }
 }

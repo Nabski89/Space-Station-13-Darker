@@ -10,7 +10,7 @@ public class WallConnector : MonoBehaviour
         RaycastHit hitWall;
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.left), out hitWall, .75f))
         {
-            Debug.Log("Wall Test Something " + hitWall.transform.name);
+          //  Debug.Log("Wall Test Something " + hitWall.transform.name);
             if (hitWall.transform.name == "Wall")
                 Destroy(this);
             else

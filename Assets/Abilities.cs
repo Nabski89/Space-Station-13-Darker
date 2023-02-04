@@ -14,6 +14,7 @@ public class Abilities : MonoBehaviour
         ActiveAbility = CharacterSelection.CharacterAbility;
         CController = GetComponentInParent<CharController>();
         Stats = GetComponentInParent<CharStats>();
+        CController.AbilityCooldown = AbilityCooldown[ActiveAbility];
     }
 
     // Update is called once per frame

@@ -44,7 +44,9 @@ public class Inventory : MonoBehaviour
             Rigidbody rb = item.gameObject.AddComponent<Rigidbody>();
             rb.AddForce(this.transform.forward * 300 + this.transform.up * 100);
             item.GetComponent<Collider>().isTrigger = false;
-
+            //disable consumables
+            if (item.GetComponent<Consumable>() != null)
+                item.GetComponent<Consumable>().enabled = false;
 
             item.transform.rotation = Quaternion.identity;
             item.transform.parent = null;
@@ -68,6 +70,13 @@ public class Inventory : MonoBehaviour
             if (Items[i] == null)
             {
                 Items[i] = item;
+                //deal with consumables
+                if (item.GetComponent<Consumable>() != null)
+                {
+                      Debug.Log("Picked up a consumable " + item.gameObject);
+                    item.GetComponent<Consumable>().enabled = true;
+
+                }
                 item.gameObject.SetActive(false);
                 OnInventoryUpdated();
                 return;

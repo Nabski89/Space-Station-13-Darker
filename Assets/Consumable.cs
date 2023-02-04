@@ -4,20 +4,13 @@ using UnityEngine;
 
 public class Consumable : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
         {
             if (Input.GetMouseButtonDown(0))
             {
                 UseConsumable();
-                GetComponentInParent<Inventory>().UseUpItem();
+
             }
         }
     }
@@ -27,5 +20,7 @@ public class Consumable : MonoBehaviour
     {
         CharStats Stats = GetComponentInParent<CharStats>();
         Stats.HP += 5;
+        GetComponentInParent<Inventory>().UseUpItem();
+
     }
 }
