@@ -6,13 +6,14 @@ using UnityEngine.AI;
 public class EnemyController : MonoBehaviour
 {
     // Start is called before the first frame update
-    Transform player;
+    public Transform player;
     NavMeshAgent agent;
     Animator mAnimator;
     bool ForgetPlayer = false;
     float ForgetPlayerTimer = 10;
+    public float ForgetPlayerTimerDefault = 10;
     float AttackCycles;
-    float AttackCycleDefault = 3;
+    public float AttackCycleDefault = 3;
     float CycleTimer;
     float CycleTimerDefault = 2;
     public GameObject Weapon;
@@ -57,7 +58,7 @@ public class EnemyController : MonoBehaviour
                 if (ForgetPlayerTimer < 0)
                 {
                     player = null;
-                    ForgetPlayerTimer = 10;
+                    ForgetPlayerTimer = ForgetPlayerTimerDefault;
                     agent.ResetPath();
                 }
             }

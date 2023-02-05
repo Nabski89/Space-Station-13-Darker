@@ -2888,7 +2888,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &351318966079578231
 Transform:
   m_ObjectHideFlags: 0
@@ -4313,6 +4313,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b72eb8f284c7e984cb9d91d0b375508d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ForgetPlayerTimerDefault: 10
+  AttackCycleDefault: 2
   Weapon: {fileID: 4056042422675502731}
 --- !u!54 &2414245925678234940
 Rigidbody:
@@ -4341,9 +4343,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.25
-  m_Height: 1.5
+  m_Height: 1.75
   m_Direction: 1
-  m_Center: {x: 0, y: 0.5, z: 0}
+  m_Center: {x: 0, y: 0.6, z: 0}
 --- !u!1 &5675678245942022414
 GameObject:
   m_ObjectHideFlags: 0
