@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8815458761696309518, guid: b2763b74ee271b740875b6603c17f9fe, type: 3}
+      propertyPath: ItemNumber
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2048798063691136779, guid: b2763b74ee271b740875b6603c17f9fe, type: 3}
       propertyPath: m_Name
       value: Cyborg Leg
@@ -70,11 +74,11 @@ PrefabInstance:
     - target: {fileID: 8195977724358840948, guid: b2763b74ee271b740875b6603c17f9fe, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 6699446615349125189, guid: dc9c35b8581e8c6429eeb04d57f45e1e, type: 3}
+      objectReference: {fileID: -1949160908574380084, guid: dc9c35b8581e8c6429eeb04d57f45e1e, type: 3}
     - target: {fileID: 8195977724358840948, guid: b2763b74ee271b740875b6603c17f9fe, type: 3}
       propertyPath: m_Materials.Array.data[2]
       value: 
-      objectReference: {fileID: 880774007180850119, guid: dc9c35b8581e8c6429eeb04d57f45e1e, type: 3}
+      objectReference: {fileID: 6346201969690392394, guid: dc9c35b8581e8c6429eeb04d57f45e1e, type: 3}
     - target: {fileID: 8195977724358840948, guid: b2763b74ee271b740875b6603c17f9fe, type: 3}
       propertyPath: m_Materials.Array.data[3]
       value: 

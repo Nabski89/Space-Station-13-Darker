@@ -4,15 +4,7 @@ using UnityEngine;
 
 public class UsableItem : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+//for now we are just going to tag our items with a number, and check if we have that item number
+public int ItemNumber;
+public bool OneTimeUse = false;
 }
