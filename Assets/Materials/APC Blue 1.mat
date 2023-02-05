@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: APC Blue
+  m_Name: APC Blue 1
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ValidKeywords:
   - _EMISSION
@@ -76,6 +76,6 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.3372549, g: 0.5372549, b: 0.87058824, a: 1}
-    - _EmissionColor: {r: 0.09305898, g: 0.25015837, b: 0.730461, a: 1}
+    - _Color: {r: 0.07058824, g: 0.22352943, b: 0.7607844, a: 1}
+    - _EmissionColor: {r: 0.0060488326, g: 0.04091521, b: 0.5394797, a: 1}
   m_BuildTextureStacks: []

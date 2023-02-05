@@ -73,7 +73,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8762865095363084392, guid: ea6f889f9ae95d84fbd4d36ec0d043d5, type: 3}
       propertyPath: m_Name
-      value: Cyborg Head
+      value: _Cyborg Head
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea6f889f9ae95d84fbd4d36ec0d043d5, type: 3}
+--- !u!1 &2048798063691136779 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8762865095363084392, guid: ea6f889f9ae95d84fbd4d36ec0d043d5, type: 3}
+  m_PrefabInstance: {fileID: 7346841707240505187}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-8815458761696309518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048798063691136779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3eed92c499d58940b1fe7ebeced5e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
