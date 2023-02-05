@@ -391,7 +391,7 @@ GameObject:
   - component: {fileID: 192720636}
   - component: {fileID: 192720635}
   m_Layer: 5
-  m_Name: Engineer Select (1)
+  m_Name: Prisoner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -834,7 +834,7 @@ GameObject:
   - component: {fileID: 211502734}
   - component: {fileID: 211502733}
   m_Layer: 5
-  m_Name: Virologist (1)
+  m_Name: Miner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2647,7 +2647,7 @@ GameObject:
   - component: {fileID: 1937716530}
   - component: {fileID: 1937716529}
   m_Layer: 5
-  m_Name: Assistant (1)
+  m_Name: Roboticist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2808,7 +2808,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2012774079
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2995,7 +2995,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 306609a761aea434fb9210b6f49082a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CharacterType: 0
+  CharacterType: 1
 --- !u!1 &2101452146
 GameObject:
   m_ObjectHideFlags: 0

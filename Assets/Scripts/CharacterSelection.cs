@@ -28,7 +28,7 @@ public class CharacterSelection : MonoBehaviour
         CharUnlockTracker.Add(CharUnlockEnum.Char3, Random.Range(0, 2));
         CharUnlockTracker.Add(CharUnlockEnum.Char4, Random.Range(0, 2));
         CharUnlockTracker.Add(CharUnlockEnum.Char5, Random.Range(0, 2));
-        CharUnlockTracker.Add(CharUnlockEnum.Char6, Random.Range(0, 2));
+        CharUnlockTracker.Add(CharUnlockEnum.Char6, 0); //unlock by building a borg
     }
 
     public static Dictionary<PerkUnlockEnum, int> PerkUnlockTracker = new Dictionary<PerkUnlockEnum, int>();

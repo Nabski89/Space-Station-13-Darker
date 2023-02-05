@@ -636,7 +636,6 @@ GameObject:
   - component: {fileID: 9115943510013734552}
   - component: {fileID: 4892793507789256221}
   - component: {fileID: 2591290381296649799}
-  - component: {fileID: 9118650728684918218}
   m_Layer: 0
   m_Name: CyborgTorso
   m_TagString: Untagged
@@ -745,18 +744,6 @@ MonoBehaviour:
   ItemRequired: 1
   ObjectOneTimeUse: 0
   WhatHappens: {fileID: 1109430402019674560}
---- !u!114 &9118650728684918218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8071689339298624001}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41e68ea77a7eb404e8731b438a8c7727, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &9063924453092332460
 GameObject:
   m_ObjectHideFlags: 0
@@ -768,6 +755,7 @@ GameObject:
   - component: {fileID: 5812866838731310783}
   - component: {fileID: 4069006090501873963}
   - component: {fileID: 2233538986153590017}
+  - component: {fileID: 4490797054174392487}
   m_Layer: 0
   m_Name: Borg Head
   m_TagString: Untagged
@@ -841,3 +829,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4490797054174392487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9063924453092332460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a1aa3d83a7426f49b537e3a67fe50f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CharacterType: 5
