@@ -37,7 +37,7 @@ public class DoorScript : MonoBehaviour
 
         if (OpenSoundEffect != null)
         {
-            GameObject OpenSE = Instantiate(OpenSoundEffect);
+            GameObject OpenSE = Instantiate(OpenSoundEffect, transform);
             Destroy(OpenSE, 5);
         }
     }
@@ -53,7 +53,7 @@ public class DoorScript : MonoBehaviour
 
         if (CloseSoundEffect != null)
       {
-            GameObject CloseSE = Instantiate(CloseSoundEffect);
+            GameObject CloseSE = Instantiate(CloseSoundEffect, transform);
             Destroy(CloseSE, 5);
         }
     }

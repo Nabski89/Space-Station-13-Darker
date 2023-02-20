@@ -9,20 +9,20 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1461646551653051671, guid: ea6f889f9ae95d84fbd4d36ec0d043d5, type: 3}
       propertyPath: m_Materials.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1461646551653051671, guid: ea6f889f9ae95d84fbd4d36ec0d043d5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: be623571e25c9d345b26e13cea029790, type: 2}
+      objectReference: {fileID: -1949160908574380084, guid: dc9c35b8581e8c6429eeb04d57f45e1e, type: 3}
     - target: {fileID: 1461646551653051671, guid: ea6f889f9ae95d84fbd4d36ec0d043d5, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2947230280197879067, guid: dc9c35b8581e8c6429eeb04d57f45e1e, type: 3}
+      objectReference: {fileID: 2100000, guid: be623571e25c9d345b26e13cea029790, type: 2}
     - target: {fileID: 1461646551653051671, guid: ea6f889f9ae95d84fbd4d36ec0d043d5, type: 3}
       propertyPath: m_Materials.Array.data[2]
       value: 
-      objectReference: {fileID: 2947230280197879067, guid: dc9c35b8581e8c6429eeb04d57f45e1e, type: 3}
+      objectReference: {fileID: 8605430402535310183, guid: dc9c35b8581e8c6429eeb04d57f45e1e, type: 3}
     - target: {fileID: 4604906068635149842, guid: ea6f889f9ae95d84fbd4d36ec0d043d5, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -96,3 +96,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemNumber: 3
   OneTimeUse: 1
+  CustomHappening: {fileID: 0}

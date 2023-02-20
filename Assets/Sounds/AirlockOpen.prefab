@@ -56,8 +56,28 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7521479214531048840, guid: 588426e0746a28741920bb63dd7bd64a, type: 3}
+      propertyPath: MaxDistance
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 7521479214531048840, guid: 588426e0746a28741920bb63dd7bd64a, type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: af209d94f3d9dbb4bacacfd42aa6a057, type: 3}
+    - target: {fileID: 7521479214531048840, guid: 588426e0746a28741920bb63dd7bd64a, type: 3}
+      propertyPath: rolloffMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7521479214531048840, guid: 588426e0746a28741920bb63dd7bd64a, type: 3}
+      propertyPath: DopplerLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7521479214531048840, guid: 588426e0746a28741920bb63dd7bd64a, type: 3}
+      propertyPath: spreadCustomCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7521479214531048840, guid: 588426e0746a28741920bb63dd7bd64a, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 588426e0746a28741920bb63dd7bd64a, type: 3}
