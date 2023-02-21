@@ -6,6 +6,8 @@ public class NeedsItem : MonoBehaviour, IInteractable
 {
     public int ItemRequired = 0;
     public bool ObjectOneTimeUse = false;
+    public bool Repeatable = false;
+    public bool Ready = true;
     public GameObject WhatHappens;
 
     //when interacting, check if the currently held item is a usable item. Then if the item number matches the required one, activate a different game object.
@@ -18,7 +20,7 @@ public class NeedsItem : MonoBehaviour, IInteractable
         UsableItem HeldItem = CharacterInventory.Items[CharacterInventory.ActiveSlot].GetComponent<UsableItem>();
         if (HeldItem != null)
         {
-            if (HeldItem.ItemNumber == ItemRequired)
+            if (HeldItem.ItemNumber == ItemRequired && Ready == true)
             {
 
                 if (HeldItem.CustomHappening != null)
@@ -27,11 +29,13 @@ public class NeedsItem : MonoBehaviour, IInteractable
                 }
                 else
                     WhatHappens.SetActive(true);
-                //do the thing
+                //Use Things Up
                 if (HeldItem.OneTimeUse == true)
                     CharacterInventory.UseUpItem();
                 if (ObjectOneTimeUse == true)
                     Destroy(this);
+                if (Repeatable == true)
+                    Ready = false;
             }
         }
     }

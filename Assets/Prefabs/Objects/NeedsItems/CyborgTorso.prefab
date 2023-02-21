@@ -743,6 +743,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemRequired: 1
   ObjectOneTimeUse: 0
+  Repeatable: 0
+  Ready: 1
   WhatHappens: {fileID: 1109430402019674560}
 --- !u!1 &9063924453092332460
 GameObject:

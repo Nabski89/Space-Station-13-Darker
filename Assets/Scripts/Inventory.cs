@@ -33,10 +33,12 @@ public class Inventory : MonoBehaviour
         }
     }
 
+    float ThrowPower = 0;
     void UpdateDropping()
     {
         var item = Items[ActiveSlot];
         if (item == null) return;
+        /*
         if (Input.GetMouseButtonDown(1))
         {
             item.gameObject.SetActive(true);
@@ -53,6 +55,33 @@ public class Inventory : MonoBehaviour
             Items[ActiveSlot] = null;
             OnInventoryUpdated();
         }
+*/
+        if (Input.GetMouseButtonDown(1))
+        {
+            ThrowPower = 0;
+        }
+        if (Input.GetMouseButton(1))
+        {
+            if (ThrowPower < 3)
+                ThrowPower += Time.deltaTime;
+        }
+        if (Input.GetMouseButtonUp(1))
+        {
+            item.gameObject.SetActive(true);
+            item.transform.position = this.transform.position + Vector3.up * 1.5f + this.transform.forward * .5f; // xd i love hardcoding
+            Rigidbody rb = item.gameObject.AddComponent<Rigidbody>();
+            rb.AddForce((this.transform.forward * 300 + this.transform.up * 100)*ThrowPower/3);
+            item.GetComponent<Collider>().isTrigger = false;
+            //disable consumables
+            if (item.GetComponent<Consumable>() != null)
+                item.GetComponent<Consumable>().enabled = false;
+
+            item.transform.rotation = Quaternion.identity;
+            item.transform.parent = null;
+            Items[ActiveSlot] = null;
+            OnInventoryUpdated();
+        }
+
     }
     public void UseUpItem()
     {
@@ -73,7 +102,7 @@ public class Inventory : MonoBehaviour
                 //deal with consumables
                 if (item.GetComponent<Consumable>() != null)
                 {
-                      Debug.Log("Picked up a consumable " + item.gameObject);
+                    Debug.Log("Picked up a consumable " + item.gameObject);
                     item.GetComponent<Consumable>().enabled = true;
 
                 }
