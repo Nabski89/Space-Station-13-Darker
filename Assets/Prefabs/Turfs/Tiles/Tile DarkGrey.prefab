@@ -59,6 +59,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[2]
       value: 
       objectReference: {fileID: 2100000, guid: 2d549d6b0f18e6340a12135a3ab3f16c, type: 2}
+    - target: {fileID: 6632562054770885643, guid: 846ea4a30b75b8c42b939b2a542d33b1, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2d549d6b0f18e6340a12135a3ab3f16c, type: 2}
     - target: {fileID: 9093162646554837139, guid: 846ea4a30b75b8c42b939b2a542d33b1, type: 3}
       propertyPath: m_Name
       value: Tile DarkGrey

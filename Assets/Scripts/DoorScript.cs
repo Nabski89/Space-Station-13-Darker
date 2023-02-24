@@ -40,6 +40,7 @@ public class DoorScript : MonoBehaviour
             GameObject OpenSE = Instantiate(OpenSoundEffect, transform);
             Destroy(OpenSE, 5);
         }
+        Invoke("AutoClose", 20);
     }
 
     public void Close()
@@ -52,9 +53,16 @@ public class DoorScript : MonoBehaviour
         m_ObjectCollider2.isTrigger = false;
 
         if (CloseSoundEffect != null)
-      {
+        {
             GameObject CloseSE = Instantiate(CloseSoundEffect, transform);
             Destroy(CloseSE, 5);
         }
     }
+
+    public void AutoClose()
+    {
+        if (IsOpenStatus == true)
+            Close();
+    }
+
 }
