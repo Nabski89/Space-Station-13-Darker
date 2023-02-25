@@ -6,11 +6,13 @@ using UnityEngine;
 public class Interact : MonoBehaviour
 {
     IInteractable InteractObject;
+    IInteractable InteractObjectActioning;
     bool KeyDownEvent = false;
     public GameObject UITextObj;
     public TMPro.TextMeshProUGUI UIText;
     CharController CharacterController;
-
+    public float ActionTime = 0;
+    public float TimeReq = 3;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +24,29 @@ public class Interact : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown("f"))
-            KeyDownEvent = true;
+        {
+            if (CharacterController.busy != true)
+                KeyDownEvent = true;
+            else
+            {
+                if (InteractObjectActioning != null)
+                    InteractObjectActioning = null;
+                CharacterController.busy = false;
+                ActionTime = 0;
+            }
+        }
+
+        if (CharacterController.busy == true)
+        {
+            ActionTime += Time.deltaTime;
+            if (ActionTime > TimeReq)
+            {
+                InteractObjectActioning.Interact(this, CharacterController);
+                InteractObjectActioning = null;
+                CharacterController.busy = false;
+                ActionTime = 0;
+            }
+        }
     }
 
     void FixedUpdate()
@@ -50,7 +74,7 @@ public class Interact : MonoBehaviour
                     KeyDownEvent = false;
                     CharacterController.busy = true;
                     Debug.Log("Pressed the interact Button");
-                    InteractObject.Interact(this, CharacterController);
+                    InteractObjectActioning = InteractObject;
                 }
             }
         }
