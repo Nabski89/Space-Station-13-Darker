@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 817966481}
   - component: {fileID: 817966480}
   - component: {fileID: 817966482}
+  - component: {fileID: 817966483}
   m_Layer: 0
   m_Name: CarryOverObject
   m_TagString: Untagged
@@ -178,6 +179,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 023f517b839b39740b91f4147c71f194, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &817966483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817966479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7217b6789d14ba94db93864b3f0ae6a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1241493040

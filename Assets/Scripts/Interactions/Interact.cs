@@ -12,7 +12,7 @@ public class Interact : MonoBehaviour
     public TMPro.TextMeshProUGUI UIText;
     CharController CharacterController;
     public float ActionTime = 0;
-    public float TimeReq = 3;
+    public float TimeReq = 0.5f;
     // Start is called before the first frame update
     void Start()
     {
