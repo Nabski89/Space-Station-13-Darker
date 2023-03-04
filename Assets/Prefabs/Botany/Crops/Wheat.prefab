@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 148436541355331084, guid: fcd3df62a0c4d5f45954b765a6cd5036, type: 3}
       propertyPath: Crop
       value: 
-      objectReference: {fileID: 5803032374496481565, guid: 5479f267e61424049b52188151228f57, type: 3}
+      objectReference: {fileID: 5079854835820229967, guid: a593b12d8ae7f0441a8b68c19d312990, type: 3}
     - target: {fileID: 148436541355331084, guid: fcd3df62a0c4d5f45954b765a6cd5036, type: 3}
       propertyPath: Seeds
       value: 

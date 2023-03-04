@@ -24,7 +24,7 @@ public class HydroponicsTray : MonoBehaviour
         if (Water > -1)
         {
             Water -= Time.deltaTime * WaterRate;
-            if (Water > 0)
+            if (Water < 0)
             {
                 {
                     Beacon1.material.color = Color.blue;
@@ -40,7 +40,7 @@ public class HydroponicsTray : MonoBehaviour
         if (Fertilizer > -1)
         {
             Fertilizer -= Time.deltaTime * FertilizerRate;
-            if (Fertilizer > 0)
+            if (Fertilizer < 0)
             {
                 Beacon2.material.color = Color.yellow;
             }
@@ -54,7 +54,7 @@ public class HydroponicsTray : MonoBehaviour
         if (Pest > -1)
         {
             Pest -= Time.deltaTime * PestsRate;
-            if (Pest > 0)
+            if (Pest < 0)
             {
                 Beacon3.material.color = Color.red;
             }
@@ -68,9 +68,9 @@ public class HydroponicsTray : MonoBehaviour
         if (PlantHealth > -1)
         {
             PlantHealth -= Time.deltaTime * PlantHealthRate;
-            if (PlantHealth > 0)
+            if (PlantHealth < 0)
             {
-                GetComponentInChildren<Plant>().Dead = true;
+                GetComponentInChildren<Plant>().Die();
                 Beacon4.material.color = Color.red;
             }
         }
@@ -83,11 +83,16 @@ public class HydroponicsTray : MonoBehaviour
         if (Harvest > -1)
         {
             Harvest -= Time.deltaTime * HarvestRate;
-            if (Harvest > 0)
+            if (Harvest < 0)
             {
                 GetComponentInChildren<Plant>().HarvestReady = true;
                 Beacon5.material.color = Color.green;
             }
         }
+    }
+
+    public void Reset()
+    {
+        Beacon5.material.color = Color.black;
     }
 }

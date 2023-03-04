@@ -37,7 +37,14 @@ public class Plant : MonoBehaviour, IInteractable
             Instantiate(Crop, transform.position + transform.up - (0.5f * transform.right), transform.rotation);
             GetComponentInParent<RepeatReset>().Reset();
             Tray.TrayPlanted = false;
+            GetComponentInParent<HydroponicsTray>().Reset();
             Destroy(gameObject);
         }
+    }
+    //when the plant dies make part of it black
+    public void Die()
+    {
+        Dead = true;
+        GetComponent<MeshRenderer>().material.color = Color.black;
     }
 }

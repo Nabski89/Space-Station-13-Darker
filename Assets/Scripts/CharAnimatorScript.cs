@@ -13,6 +13,7 @@ public class CharAnimatorScript : MonoBehaviour
         mAnimator = GetComponent<Animator>();
         rb = GetComponentInParent<Rigidbody>();
     }
+    /*
     void FixedUpdate()
     {
         if (Mathf.Abs(rb.velocity.x) + Mathf.Abs(rb.velocity.y) < .01)
@@ -25,8 +26,8 @@ public class CharAnimatorScript : MonoBehaviour
             if (moving == false)
                 Walking();
         }
-
     }
+*/
     public void Walking()
     {
         mAnimator.SetTrigger("Moving");

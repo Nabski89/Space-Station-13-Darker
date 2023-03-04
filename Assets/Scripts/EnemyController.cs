@@ -34,12 +34,13 @@ public class EnemyController : MonoBehaviour
 
 
         // if we have a velocity start to move the characters leg
-
-        if (agent.velocity.magnitude > 0)
-            mAnimator.SetBool("Moving", true);
-        else
-            mAnimator.SetBool("Moving", false);
-
+        if (mAnimator != null)
+        {
+            if (agent.velocity.magnitude > 0)
+                mAnimator.SetBool("Moving", true);
+            else
+                mAnimator.SetBool("Moving", false);
+        }
         //if we have a target go after them
         if (player != null)
         {
