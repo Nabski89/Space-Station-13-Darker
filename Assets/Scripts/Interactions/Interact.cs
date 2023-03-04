@@ -32,7 +32,7 @@ public class Interact : MonoBehaviour
                 if (InteractObjectActioning != null)
                     InteractObjectActioning = null;
                 CharacterController.busy = false;
-                ActionTime = 0;
+                ActionTime = InteractObjectActioning.InteractionTime;
             }
         }
 

@@ -4,5 +4,7 @@ using UnityEngine;
 
 public interface IInteractable
 {
+ 
+    public float InteractionTime { get; }
     public void Interact(Interact source, CharController Character);
 }

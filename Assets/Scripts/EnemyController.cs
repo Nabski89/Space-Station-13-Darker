@@ -17,8 +17,11 @@ public class EnemyController : MonoBehaviour
     float CycleTimer;
     float CycleTimerDefault = 2;
     public GameObject Weapon;
+
+    Rigidbody rb;
     void Start()
     {
+        rb = GetComponent<Rigidbody>();
         agent = GetComponentInParent<NavMeshAgent>();
         mAnimator = GetComponent<Animator>();
 
@@ -28,6 +31,15 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
+        // if we have a velocity start to move the characters leg
+
+        if (agent.velocity.magnitude > 0)
+            mAnimator.SetBool("Moving", true);
+        else
+            mAnimator.SetBool("Moving", false);
+
         //if we have a target go after them
         if (player != null)
         {
@@ -62,7 +74,6 @@ public class EnemyController : MonoBehaviour
                     agent.ResetPath();
                 }
             }
-
         }
     }
 

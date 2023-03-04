@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class NeedsItem : MonoBehaviour, IInteractable
 {
+    [field: SerializeField] public float InteractionTime { get; }
     public int ItemRequired = 0;
     public bool ObjectOneTimeUse = false;
     public bool Repeatable = false;

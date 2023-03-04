@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class InteractableLight : MonoBehaviour, IInteractable
 {
+    [field: SerializeField] public float InteractionTime { get; private set;}
     public int ChanceLightOutPercent = 0;
     public Light LightBulb;
     void Start()

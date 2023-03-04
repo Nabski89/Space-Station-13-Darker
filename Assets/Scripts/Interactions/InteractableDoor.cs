@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class InteractableDoor : MonoBehaviour, IInteractable
 {
-
+    [field: SerializeField] public float InteractionTime { get; }
     public void Interact(Interact source, CharController Character)
     {
         if (Character != null)

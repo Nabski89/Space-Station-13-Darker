@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Plant : MonoBehaviour, IInteractable
 {
+
+    [field: SerializeField] public float InteractionTime { get; }
     public GameObject Seeds;
     public GameObject Crop;
     public bool HarvestReady = false;
