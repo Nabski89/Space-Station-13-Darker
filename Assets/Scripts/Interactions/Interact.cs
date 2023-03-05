@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using UnityEngine.UI;
+using UnityEngine.UI;
 
 public class Interact : MonoBehaviour
 {
@@ -61,6 +61,7 @@ public class Interact : MonoBehaviour
 
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hitInteract, 2))
         {
+
             //Debug.Log("Hit Something " + hitInteract.transform);
             //Debug.DrawRay(transform.position, (transform.forward * 1 * hitInteract.distance), Color.yellow, 10f);
             InteractObject = hitInteract.transform.GetComponent<IInteractable>();
@@ -68,6 +69,12 @@ public class Interact : MonoBehaviour
             {
                 UITextObj.SetActive(true);
                 UIText.text = hitInteract.transform.name;
+
+                Item InteractItem = hitInteract.transform.GetComponent<Item>();
+                if (InteractItem != null)
+                    TextColor(InteractItem.Quality);
+                else
+                    UIText.color = Color.white;
                 //         Debug.Log("Did Hit the interactable " + hitInteract.transform);
                 if (KeyDownEvent == true)
                 {
@@ -77,6 +84,8 @@ public class Interact : MonoBehaviour
                     InteractObjectActioning = InteractObject;
                 }
             }
+            else
+                UITextObj.SetActive(false);
         }
         else
         {
@@ -85,5 +94,26 @@ public class Interact : MonoBehaviour
             UITextObj.SetActive(false);
         }
         KeyDownEvent = false;
+    }
+    void TextColor(int Number)
+    {
+        switch (Number)
+        {
+            case 0:
+                UIText.color = Color.gray;
+                break;
+            case 1:
+                UIText.color = Color.white;
+                break;
+            case 2:
+                UIText.color = Color.green;
+                break;
+            case 3:
+                UIText.color = new Color(0, 0.44f, 0.87f, 1.0f);
+                break;
+            case 4:
+                UIText.color = new Color(0.64f, 0.21f, 0.93f, 1.0f);
+                break;
+        }
     }
 }

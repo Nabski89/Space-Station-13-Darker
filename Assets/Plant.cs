@@ -6,6 +6,7 @@ public class Plant : MonoBehaviour, IInteractable
 {
 
     [field: SerializeField] public float InteractionTime { get; }
+    public float HarvestRequirement;
     public GameObject Seeds;
     public GameObject Crop;
     public bool HarvestReady = false;
@@ -18,7 +19,7 @@ public class Plant : MonoBehaviour, IInteractable
         Tray = GetComponentInParent<HydroponicsTray>();
         Tray.TrayPlanted = true;
         Tray.PlantHealth = 100;
-        Tray.Harvest = 100;
+        Tray.HarvestReq = HarvestRequirement;
     }
 
 
@@ -37,7 +38,7 @@ public class Plant : MonoBehaviour, IInteractable
             Instantiate(Crop, transform.position + transform.up - (0.5f * transform.right), transform.rotation);
             GetComponentInParent<RepeatReset>().Reset();
             Tray.TrayPlanted = false;
-            GetComponentInParent<HydroponicsTray>().Reset();
+            Tray.Reset();
             Destroy(gameObject);
         }
     }
@@ -46,5 +47,17 @@ public class Plant : MonoBehaviour, IInteractable
     {
         Dead = true;
         GetComponent<MeshRenderer>().material.color = Color.black;
+    }
+    public void Harvestable()
+    {
+        if (HarvestReady == false)
+        {
+            float score = 0;
+            score += Tray.NoWaterTime / HarvestRequirement;
+            score += Tray.NoFertTime / HarvestRequirement;
+            score += Tray.NoPestTime / HarvestRequirement;
+
+        }
+        HarvestReady = true;
     }
 }

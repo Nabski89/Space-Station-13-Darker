@@ -6,6 +6,7 @@ public class Item : MonoBehaviour, IInteractable
 {
     [field: SerializeField] public float InteractionTime { get; }
     public Sprite Icon;
+    public int Quality = 0;
     Collider m_ObjectCollider;
     //This will be used to determine what attack type it falls under and assign it. Current max is three for 0Axe 1Dagger 2Sword
     public int WeaponType = 0;
