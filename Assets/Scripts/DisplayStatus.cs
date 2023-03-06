@@ -6,8 +6,14 @@ public class DisplayStatus : MonoBehaviour
 {
     public static float TIMER = 30;
     public static string CountdownDisplay;
-    float ETA = 10 * 60;
-    float DEPART = 3 * 60;
+    public Shuttle EvacShuttle;
+    float ETA = 15;
+    //10 * 60;
+    float DEPART = 15;
+    //3 * 60;
+    float ENDROUND = 30;
+    public int ShuttleStatus = 0;
+
     public GameObject CalledSound;
     public GameObject DockSound;
     public GameObject Player;
@@ -15,21 +21,28 @@ public class DisplayStatus : MonoBehaviour
     void Update()
     {
         TIMER -= Time.deltaTime;
-        CountdownDisplay = "ETA\n"+Mathf.FloorToInt(TIMER / 60).ToString() + ":" + Mathf.FloorToInt(TIMER % 60).ToString();
+        CountdownDisplay = "ETA\n" + Mathf.FloorToInt(TIMER / 60).ToString() + ":" + Mathf.FloorToInt(TIMER % 60).ToString();
         if (TIMER < 0)
-        {
-            if (CalledSound != null)
+            switch (ShuttleStatus)
             {
-                Instantiate(CalledSound, Player.transform.position, Quaternion.identity);
-                TIMER = ETA;
-                CalledSound = null;
+                case 0:
+                    Instantiate(CalledSound, Player.transform.position, Quaternion.identity);
+                    TIMER = ETA;
+                    ShuttleStatus = 1;
+                    EvacShuttle.ShuttleStage = 1;
+                    break;
+                case 1:
+                    Instantiate(DockSound, Player.transform.position, Quaternion.identity);
+                    TIMER = DEPART;
+                    EvacShuttle.ShuttleStage = 2;
+                    ShuttleStatus = 2;
+                    DockSound = null;
+                    break;
+                case 2:
+                    Instantiate(DockSound, Player.transform.position, Quaternion.identity);
+                    TIMER = ENDROUND;
+                    //this is how we end the round
+                    break;
             }
-            else
-            {
-                Instantiate(DockSound, Player.transform.position, Quaternion.identity);
-                TIMER = DEPART;
-                //this is how we end the round
-            }
-        }
     }
 }
