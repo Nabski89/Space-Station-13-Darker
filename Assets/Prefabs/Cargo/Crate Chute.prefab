@@ -42,7 +42,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6741788774582286448}
-  m_Mesh: {fileID: -513594538090648959, guid: dc9c35b8581e8c6429eeb04d57f45e1e, type: 3}
+  m_Mesh: {fileID: 8309911985006817182, guid: ab7fed16f0d721340b628913f4efea57, type: 3}
 --- !u!23 &7752739245482388261
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -64,6 +64,10 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 0}
+  - {fileID: 2100000, guid: 587d3ea51688999468d2a498677929a7, type: 2}
+  - {fileID: 2100000, guid: 5aa7aa604ee52fc458da9a7da18a738c, type: 2}
+  - {fileID: 2100000, guid: bedf4d9735e1a1142a2c052da7410842, type: 2}
+  - {fileID: 2100000, guid: 3fedaf825b87fe64099a283b2f99f4ca, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -111,3 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 459385980ceccae4fae7e82e1c762cfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TravelDelay: 0
+  EndLocation: {x: 0, y: 0, z: 0}
+  ScreenBlackoutUIElement: {fileID: 0}
+  CLANG: {fileID: 6178661147464518613, guid: 2738cf70d1014e04083552badbc5e472, type: 3}

@@ -53,7 +53,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4258718644489468351, guid: b9fdf78dcb932a7409ad103e22172b93, type: 3}
       propertyPath: m_Name
-      value: _Crate
+      value: Medical Crate
       objectReference: {fileID: 0}
+    - target: {fileID: 7435942612232327320, guid: b9fdf78dcb932a7409ad103e22172b93, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 922c34e9d43c62f4c8603f4185fc87f3, type: 2}
+    - target: {fileID: 7435942612232327320, guid: b9fdf78dcb932a7409ad103e22172b93, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 20364c9f47696a6439c2c90d8cb3ffed, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9fdf78dcb932a7409ad103e22172b93, type: 3}

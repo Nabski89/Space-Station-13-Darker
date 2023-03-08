@@ -40,7 +40,7 @@ public class GameCrate : MonoBehaviour
         Display = GetComponentInChildren<TMPro.TextMeshPro>();
         Display.text = "<br>Order #: " + LabelOrderNumber + "<br>Department: " + LabelDepartmentName + "<br>Contents: " + LabelContents;
     }
-    void CheckCrate()
+    public void CheckCrate()
     {
         if (LabelOrderNumber == OrderNumber && LabelDepartmentName == TrueDepartmentName && ContentFail == false)
         {

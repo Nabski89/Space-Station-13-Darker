@@ -5,7 +5,7 @@ using UnityEngine;
 public class Plant : MonoBehaviour, IInteractable
 {
 
-    [field: SerializeField] public float InteractionTime { get; }
+    [field: SerializeField] public float InteractionTime { get; private set; }
     public float HarvestRequirement;
     public GameObject Seeds;
     public GameObject Crop;

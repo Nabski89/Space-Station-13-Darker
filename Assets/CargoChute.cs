@@ -7,6 +7,7 @@ public class CargoChute : MonoBehaviour
     public float TravelDelay;
     public Vector3 EndLocation;
     public GameObject ScreenBlackoutUIElement;
+    public GameObject CLANG;
     GameObject MainCharacter;
     // Start is called before the first frame update
     void Start()
@@ -27,7 +28,7 @@ public class CargoChute : MonoBehaviour
             PlayerTravel();
         }
         /*
-        CargoCrate Crate = other.GetComponent<CargoCrate>();
+        GameCrate Crate = other.GetComponent<CargoCrate>();
                 if (Crate != null)
         {
             ScoreCrate(Crate);
@@ -38,6 +39,7 @@ public class CargoChute : MonoBehaviour
     {
         ScreenBlackoutUIElement.SetActive(true);
         MainCharacter.transform.position = new Vector3(-200, 1, -200);
+        Instantiate(CLANG, new Vector3(-200, 1, -200), transform.rotation, MainCharacter.transform);
         Invoke("PlayerLand", 10f);
     }
     void PlayerLand()
@@ -48,5 +50,8 @@ public class CargoChute : MonoBehaviour
     void ScoreCrate(GameObject Crate)
     {
 
+        Crate.GetComponent<GameCrate>().CheckCrate();
+        Instantiate(CLANG, transform.position, transform.rotation);
+        Destroy(Crate);
     }
 }

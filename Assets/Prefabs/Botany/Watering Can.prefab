@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5769988190364142320
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -2912999011609434382, guid: c39db6ad40ab2f94ab5a6870fa4fc347, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -4268755030530490617, guid: 861610c8cc358e44a9d4d80c456f2fb3, type: 3}
+    - target: {fileID: -270826525789966857, guid: c39db6ad40ab2f94ab5a6870fa4fc347, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -270826525789966857, guid: c39db6ad40ab2f94ab5a6870fa4fc347, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -6852507468501618032, guid: 861610c8cc358e44a9d4d80c456f2fb3, type: 3}
+    - target: {fileID: -270826525789966857, guid: c39db6ad40ab2f94ab5a6870fa4fc347, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 6346201969690392394, guid: dc9c35b8581e8c6429eeb04d57f45e1e, type: 3}
+    - target: {fileID: 1292225361386668168, guid: c39db6ad40ab2f94ab5a6870fa4fc347, type: 3}
+      propertyPath: m_Name
+      value: Watering Can
+      objectReference: {fileID: 0}
+    - target: {fileID: 4442894504785305574, guid: c39db6ad40ab2f94ab5a6870fa4fc347, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4442894504785305574, guid: c39db6ad40ab2f94ab5a6870fa4fc347, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4442894504785305574, guid: c39db6ad40ab2f94ab5a6870fa4fc347, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4442894504785305574, guid: c39db6ad40ab2f94ab5a6870fa4fc347, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4442894504785305574, guid: c39db6ad40ab2f94ab5a6870fa4fc347, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4442894504785305574, guid: c39db6ad40ab2f94ab5a6870fa4fc347, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4442894504785305574, guid: c39db6ad40ab2f94ab5a6870fa4fc347, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4442894504785305574, guid: c39db6ad40ab2f94ab5a6870fa4fc347, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4442894504785305574, guid: c39db6ad40ab2f94ab5a6870fa4fc347, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4442894504785305574, guid: c39db6ad40ab2f94ab5a6870fa4fc347, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4442894504785305574, guid: c39db6ad40ab2f94ab5a6870fa4fc347, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c39db6ad40ab2f94ab5a6870fa4fc347, type: 3}
+--- !u!1 &4755226911929436792 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1292225361386668168, guid: c39db6ad40ab2f94ab5a6870fa4fc347, type: 3}
+  m_PrefabInstance: {fileID: 5769988190364142320}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5600397374908082730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4755226911929436792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3eed92c499d58940b1fe7ebeced5e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemNumber: 102
+  OneTimeUse: 1
+  CustomHappening: {fileID: 0}

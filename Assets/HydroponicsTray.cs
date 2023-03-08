@@ -29,7 +29,7 @@ public class HydroponicsTray : MonoBehaviour
             NoWaterTime += Time.deltaTime;
         }
     }
-    public float Fertilizer = 20;
+    public float Fertilizer = 10;
     public float FertilizerRate = 1f;
     public float NoFertTime = 0;
     public MeshRenderer Beacon2;

@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class DisplayStatus : MonoBehaviour
 {
-    public static float TIMER = 30;
+    public static float TIMER = 60;
     public static string CountdownDisplay;
     public Shuttle EvacShuttle;
-    float ETA = 15;
-    //10 * 60;
-    float DEPART = 15;
-    //3 * 60;
+    float ETA = 10 * 60;
+    float DEPART = 3 * 60;
     float ENDROUND = 30;
     public int ShuttleStatus = 0;
 
@@ -39,8 +37,9 @@ public class DisplayStatus : MonoBehaviour
                     DockSound = null;
                     break;
                 case 2:
-                    Instantiate(DockSound, Player.transform.position, Quaternion.identity);
+                    //     Instantiate(DockSound, Player.transform.position, Quaternion.identity);
                     TIMER = ENDROUND;
+                    ShuttleStatus = 4;
                     //this is how we end the round
                     break;
             }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Item : MonoBehaviour, IInteractable
 {
-    [field: SerializeField] public float InteractionTime { get; }
+    [field: SerializeField] public float InteractionTime { get; private set; }
     public Sprite Icon;
     public int Quality = 0;
     Collider m_ObjectCollider;

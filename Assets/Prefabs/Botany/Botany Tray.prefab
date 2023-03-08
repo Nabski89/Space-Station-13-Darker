@@ -84,6 +84,50 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &2809160449514266750
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 805966326705333246}
+  - component: {fileID: 8986296589767497278}
+  m_Layer: 0
+  m_Name: Pest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &805966326705333246
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2809160449514266750}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7162616052896723202}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8986296589767497278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2809160449514266750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f71f298899e65434f8278df8e3608791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2834190246410767354
 GameObject:
   m_ObjectHideFlags: 0
@@ -252,6 +296,50 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &3595940756681460289
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5517691137019925350}
+  - component: {fileID: 7007663571058830728}
+  m_Layer: 0
+  m_Name: Fert
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5517691137019925350
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3595940756681460289}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7162616052896723202}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7007663571058830728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3595940756681460289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b46e76c0790966c4494adcb403e9f49c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6415598702345282270
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,6 +424,50 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &7671031109422038234
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 300587849736198969}
+  - component: {fileID: 3881037925685433960}
+  m_Layer: 0
+  m_Name: Water
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &300587849736198969
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7671031109422038234}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7162616052896723202}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3881037925685433960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7671031109422038234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e003038aa56e0b498cf16a88ec67ac6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7719328435632315066
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,6 +766,23 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3766643091956480025, guid: 05bb3af016dc4614dbe5185b32518713, type: 3}
   m_PrefabInstance: {fileID: 4836660367709577382}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &508024046498778231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8600337161959807167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8be8c108ddcacf548859dbfa809f1408, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemRequired: 101
+  ObjectOneTimeUse: 0
+  Repeatable: 1
+  Ready: 1
+  WhatHappens: {fileID: 0}
 --- !u!114 &3129916567433733783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -647,6 +796,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ToReset: {fileID: 8605692647921886007}
+--- !u!114 &8209690544252930215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8600337161959807167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8be8c108ddcacf548859dbfa809f1408, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemRequired: 102
+  ObjectOneTimeUse: 0
+  Repeatable: 1
+  Ready: 1
+  WhatHappens: {fileID: 0}
 --- !u!114 &8605092425702125844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -661,18 +827,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TrayPlanted: 0
   Water: 100
-  WaterRate: 5
+  WaterRate: 0.9
+  NoWaterTime: 0
   Beacon1: {fileID: 7754336817614855762}
   Fertilizer: 100
-  FertilizerRate: 1.5
+  FertilizerRate: 0.6
+  NoFertTime: 0
   Beacon2: {fileID: 131483412803288556}
   Pest: 100
-  PestsRate: 0
+  PestsRate: 1.2
+  NoPestTime: 0
   Beacon3: {fileID: 5991988361467680829}
   PlantHealth: 100
   PlantHealthRate: 1.5
   Beacon4: {fileID: 3178368905357034035}
   Harvest: 100
+  HarvestReq: 100
   HarvestRate: 2
   Beacon5: {fileID: 822967143728716470}
 --- !u!114 &8605692647921886007 stripped

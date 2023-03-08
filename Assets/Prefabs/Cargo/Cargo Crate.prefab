@@ -53,7 +53,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4258718644489468351, guid: b9fdf78dcb932a7409ad103e22172b93, type: 3}
       propertyPath: m_Name
-      value: _Crate
+      value: Cargo Crate
       objectReference: {fileID: 0}
+    - target: {fileID: 7435942612232327320, guid: b9fdf78dcb932a7409ad103e22172b93, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 81a6e78f4cc79da48959fa1e13034b2a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9fdf78dcb932a7409ad103e22172b93, type: 3}

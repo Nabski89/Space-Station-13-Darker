@@ -27,7 +27,7 @@ public class CharAnimatorScript : MonoBehaviour
                 Walking();
         }
     }
-*/
+
     public void Walking()
     {
         mAnimator.SetTrigger("Moving");
@@ -46,6 +46,7 @@ public class CharAnimatorScript : MonoBehaviour
         mAnimator.SetTrigger("StopMove");
         moving = false;
     }
+    */
     public void Attack()
     {
         Item WeaponHeld = GetComponentInChildren<Item>();

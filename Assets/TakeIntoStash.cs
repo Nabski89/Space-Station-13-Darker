@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TakeIntoStash : MonoBehaviour, IInteractable
 {
-    [field: SerializeField] public float InteractionTime { get; }
+    [field: SerializeField] public float InteractionTime { get; private set; }
     public GameObject StashedItem;
 
     public void Interact(Interact source, CharController Character)
