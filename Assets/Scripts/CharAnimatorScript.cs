@@ -6,12 +6,10 @@ public class CharAnimatorScript : MonoBehaviour
 {
     // Start is called before the first frame update
     Animator mAnimator;
-    Rigidbody rb;
     bool moving = false;
     void Start()
     {
         mAnimator = GetComponent<Animator>();
-        rb = GetComponentInParent<Rigidbody>();
     }
     /*
     void FixedUpdate()
@@ -59,9 +57,9 @@ public class CharAnimatorScript : MonoBehaviour
             if (WeaponHeld.WeaponType == 2)
                 mAnimator.SetTrigger("SwordAttack");
         }
-        else
+                else
             mAnimator.SetTrigger("AxeAttack");
-
+            
         moving = false;
     }
 }
