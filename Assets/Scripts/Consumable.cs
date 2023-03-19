@@ -10,7 +10,6 @@ public class Consumable : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 UseConsumable();
-
             }
         }
     }
@@ -21,6 +20,5 @@ public class Consumable : MonoBehaviour
         CharStats Stats = GetComponentInParent<CharStats>();
         Stats.HP += 5;
         GetComponentInParent<Inventory>().UseUpItem();
-
     }
 }
