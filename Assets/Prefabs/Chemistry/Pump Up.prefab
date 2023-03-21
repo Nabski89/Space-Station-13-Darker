@@ -23,6 +23,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pump Up
       objectReference: {fileID: 0}
+    - target: {fileID: 8686334814516185385, guid: 9cfe7cbd964784242b61b5ee2cd85932, type: 3}
+      propertyPath: PillNumber
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8822581692010105749, guid: 9cfe7cbd964784242b61b5ee2cd85932, type: 3}
       propertyPath: m_RootOrder
       value: 0

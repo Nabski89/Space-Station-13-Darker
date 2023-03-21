@@ -616,9 +616,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c33263b976c3add4380f535a1e9dd45b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Spawn1: {fileID: 2372588282314187563, guid: 3eced331171f06940b96664799a8f66c, type: 3}
-  Spawn2: {fileID: 1168780388416075831, guid: c84df7051b43a394a922547d2d33b413, type: 3}
-  Spawn3: {fileID: 6864341493161452030, guid: fb1764610a45be543a8365a05b3a64f8, type: 3}
+  Pills:
+  - {fileID: 3899385567824288504, guid: d2c23ec2ecf9ac3419be9e47b566f5ee, type: 3}
+  - {fileID: 1545805489507588698, guid: efab6048c978cb748b4a4516f3fa4f85, type: 3}
+  - {fileID: 6439935075181805266, guid: 627ed751117c0434a941f391109eda62, type: 3}
+  - {fileID: 941367683414242309, guid: 1ed44af9be55f904a92e01291dbd61ed, type: 3}
+  - {fileID: 1448896398915304128, guid: 771bc77e4d786774c8b86c706457be06, type: 3}
+  - {fileID: 4958315845359438160, guid: 3d1ea983eb1d0ff4a9223573226058ec, type: 3}
   ChemFilling: 000000
   ChemLevels:
   - 0
@@ -629,9 +633,7 @@ MonoBehaviour:
   - {fileID: 1977427229423946100}
   - {fileID: 0}
   RecipeAttempt: 0
-  Recipe1: 0
-  Recipe2: 0
-  Recipe3: 0
+  Recipe: 000000000000000000000000000000000000000000000000
 --- !u!1 &6801372484678241168
 GameObject:
   m_ObjectHideFlags: 0
