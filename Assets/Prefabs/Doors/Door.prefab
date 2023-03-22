@@ -50,8 +50,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a623d99a5535c14f9af534d698ccbc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ObjectCollider: {fileID: 3003145368939989050}
-  m_ObjectCollider2: {fileID: 7834785838617561188}
+  m_ObjectCollider: {fileID: 0}
+  m_ObjectCollider2: {fileID: 0}
   OpenSoundEffect: {fileID: 1747567267099290711, guid: 03cdbd237de24ec47a7045a7929769e5, type: 3}
   CloseSoundEffect: {fileID: 6458758312047536834, guid: 0cb1414b65ba1a84c80a3c4e7f2fbe07, type: 3}
 --- !u!95 &1910004107865989874
@@ -354,6 +354,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 5092708244707826562, guid: 238b9add150eed949b6187ca1e4ab62a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5346531008894733829, guid: 238b9add150eed949b6187ca1e4ab62a, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -390,97 +394,3 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 238b9add150eed949b6187ca1e4ab62a, type: 3}
   m_PrefabInstance: {fileID: 2412526582725030463}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &5276369020409531936 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7512683188018347039, guid: 238b9add150eed949b6187ca1e4ab62a, type: 3}
-  m_PrefabInstance: {fileID: 2412526582725030463}
-  m_PrefabAsset: {fileID: 0}
---- !u!54 &2617085302787883308
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5276369020409531936}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!65 &7834785838617561188
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5276369020409531936}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.2, z: 2}
-  m_Center: {x: -0.25, y: 0, z: -1}
---- !u!114 &8506899193694081936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5276369020409531936}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94f48cfd470e8bf42b0fcc000b59068b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <InteractionTime>k__BackingField: 0
---- !u!1 &7095330850163195539 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -4391948663348540244, guid: 238b9add150eed949b6187ca1e4ab62a, type: 3}
-  m_PrefabInstance: {fileID: 2412526582725030463}
-  m_PrefabAsset: {fileID: 0}
---- !u!54 &6167914441356747606
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7095330850163195539}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!65 &3003145368939989050
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7095330850163195539}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.2, z: 2}
-  m_Center: {x: 0.25, y: 0, z: -1}
---- !u!114 &1614075296111178454
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7095330850163195539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94f48cfd470e8bf42b0fcc000b59068b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <InteractionTime>k__BackingField: 0

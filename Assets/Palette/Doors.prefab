@@ -84,6 +84,7 @@ Transform:
   - {fileID: 3624885918297351900}
   - {fileID: 5696360505917607414}
   - {fileID: 9214916628923696731}
+  - {fileID: 7835354035627366309}
   m_Father: {fileID: 6600640984602402516}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -407,6 +408,80 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1646209737896980684, guid: b106ba59ae98ae149abc647f55009c17, type: 3}
   m_PrefabInstance: {fileID: 1107348258609094677}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1717268251018429185
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7346578620836918627}
+    m_Modifications:
+    - target: {fileID: 355756804823594482, guid: 979a1ab0b74331342989f76d286fd09f, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2085369109111471697, guid: 979a1ab0b74331342989f76d286fd09f, type: 3}
+      propertyPath: m_Name
+      value: HALLWAY DOOR
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985011934195490124, guid: 979a1ab0b74331342989f76d286fd09f, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892413107305747620, guid: 979a1ab0b74331342989f76d286fd09f, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892413107305747620, guid: 979a1ab0b74331342989f76d286fd09f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892413107305747620, guid: 979a1ab0b74331342989f76d286fd09f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892413107305747620, guid: 979a1ab0b74331342989f76d286fd09f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892413107305747620, guid: 979a1ab0b74331342989f76d286fd09f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892413107305747620, guid: 979a1ab0b74331342989f76d286fd09f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892413107305747620, guid: 979a1ab0b74331342989f76d286fd09f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892413107305747620, guid: 979a1ab0b74331342989f76d286fd09f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892413107305747620, guid: 979a1ab0b74331342989f76d286fd09f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892413107305747620, guid: 979a1ab0b74331342989f76d286fd09f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892413107305747620, guid: 979a1ab0b74331342989f76d286fd09f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9003046489106676053, guid: 979a1ab0b74331342989f76d286fd09f, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 979a1ab0b74331342989f76d286fd09f, type: 3}
+--- !u!4 &7835354035627366309 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8892413107305747620, guid: 979a1ab0b74331342989f76d286fd09f, type: 3}
+  m_PrefabInstance: {fileID: 1717268251018429185}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2749757615440514066
 PrefabInstance:
@@ -876,7 +951,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 186713105419498767, guid: 11a6838818df1c14bb7407f9074c9add, type: 3}
   m_PrefabInstance: {fileID: 9040592854957044564}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2752308146718802648
+--- !u!114 &1792722709178316453
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -81,7 +81,9 @@ public class Interact : MonoBehaviour
                     KeyDownEvent = false;
                     CharacterController.busy = true;
                     Debug.Log("Pressed the interact Button");
+                    
                     InteractObjectActioning = InteractObject;
+                                        TimeReq = InteractObjectActioning.InteractionTime +0.1f;
                 }
             }
             else
