@@ -12,12 +12,15 @@ public class ItemSpawn : MonoBehaviour
         if (Random.Range(0, 100) < SpawnChance)
         {
             GameObject LootSpawned = Instantiate(SpawnList[Random.Range(0, SpawnList.Length)], transform.position, transform.rotation);
+            if (transform.parent != null)
+                LootSpawned.transform.parent = transform.transform;
             //add something about the loot quality here
             //get component the script we want
             //if not null
             //then upgrade quality
             //maybe with a while loop and it's 50/50 odds each time?
+            //turns out I put this on the object itself
         }
-        Destroy(gameObject,2);
+        Destroy(gameObject, 2);
     }
 }

@@ -25,7 +25,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: bedf4d9735e1a1142a2c052da7410842, type: 2}
     - target: {fileID: 4937444201821834466, guid: a89258dcbe78bf44aa49cf39da751eec, type: 3}
       propertyPath: m_Name
-      value: Wheat
+      value: _Plant Base
       objectReference: {fileID: 0}
     - target: {fileID: 6016499233518050629, guid: a89258dcbe78bf44aa49cf39da751eec, type: 3}
       propertyPath: Icon
@@ -77,3 +77,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a89258dcbe78bf44aa49cf39da751eec, type: 3}
+--- !u!1 &5803032374496481565 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4937444201821834466, guid: a89258dcbe78bf44aa49cf39da751eec, type: 3}
+  m_PrefabInstance: {fileID: 1445040189378616831}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-2083871725781918198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5803032374496481565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3eed92c499d58940b1fe7ebeced5e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemNumber: 0
+  OneTimeUse: 1
+  CustomHappening: {fileID: 0}

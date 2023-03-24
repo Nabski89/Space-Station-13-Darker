@@ -7,6 +7,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2083871725781918198, guid: 5479f267e61424049b52188151228f57, type: 3}
+      propertyPath: ItemNumber
+      value: 116
+      objectReference: {fileID: 0}
+    - target: {fileID: -2083871725781918198, guid: 5479f267e61424049b52188151228f57, type: 3}
+      propertyPath: CustomHappening
+      value: 
+      objectReference: {fileID: 167886034253757474, guid: 844034ab200c8de4cb3250379541fa34, type: 3}
     - target: {fileID: 5803032374496481565, guid: 5479f267e61424049b52188151228f57, type: 3}
       propertyPath: m_Name
       value: Wheat
