@@ -15,9 +15,9 @@ public class MoveButton : MonoBehaviour
     void Update()
     {
         //     agent.SetDestination(Vector3.zero);
-        transform.position = Vector3.MoveTowards(transform.position, transform.parent.position + Vector3.up * (1+ButtonPressed*.25f), 1 * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, transform.parent.position + Vector3.up * (0-ButtonPressed*.1f), 1 * Time.deltaTime);
 
-        if (transform.position == transform.parent.position + Vector3.up * (1+ButtonPressed*.25f))
+        if (transform.position == transform.parent.position + Vector3.up * (0-ButtonPressed*.1f))
         {
             this.enabled = false;
         }

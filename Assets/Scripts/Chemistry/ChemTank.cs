@@ -8,11 +8,12 @@ public class ChemTank : MonoBehaviour
 
     public bool[] ChemFilling;
     public float[] ChemLevels;
-    public RectTransform[] ChemLevelsUI;
+    public Transform[] ChemLevelsUI;
     public int RecipeAttempt = 0;
     public float InteractionTime;
     public static int[] Recipe;
     float TotalChems = 0;
+    ChemTankTopper SpinDoodad;
 
 
     //this code needs some commenting
@@ -21,6 +22,9 @@ public class ChemTank : MonoBehaviour
     //then at the end we check to see if we made it in the right order
     void Awake()
     {
+        ColorTanks();
+        SpinDoodad = GetComponentInChildren<ChemTankTopper>();
+
         Recipe = new int[6];
         int i = 0;
         while (i < Recipe.Length)
@@ -46,10 +50,7 @@ public class ChemTank : MonoBehaviour
                 ChemLevels[i] += Time.deltaTime;
                 TotalChems += Time.deltaTime;
             }
-            if (i != 0)
-                ChemLevelsUI[i].localScale = new Vector3(1, Mathf.Max(ChemLevels[i], 0.0001f) / Mathf.Max(ChemLevels[i - 1], 0.0001f), 1);
-            else
-                ChemLevelsUI[i].localScale = new Vector3(1, Mathf.Max(ChemLevels[i], 0.0001f), 1);
+            ChemLevelsUI[i].localScale = new Vector3(1, Mathf.Max(ChemLevels[i] / 10, 0.0001f), 1);
             //do some scaling shit for a UI
             i += 1;
         }
@@ -69,6 +70,8 @@ public class ChemTank : MonoBehaviour
     }
     void Stop()
     {
+        SpinDoodad.SpinSpeed = 15;
+
         TotalChems = 0;
         int purity = 0;
         int i = 0;
@@ -76,7 +79,10 @@ public class ChemTank : MonoBehaviour
         {
             ChemFilling[i] = false;
             if (ChemLevels[i] > 3)
+            {
                 purity += 1;
+                SpinDoodad.SpinSpeed += 5;
+            }
             ChemLevels[i] = 0;
             i += 1;
         }
@@ -98,5 +104,16 @@ public class ChemTank : MonoBehaviour
         }
         else
             Debug.Log("Failed to make a pill");
+    }
+
+
+    void ColorTanks()
+    {
+        ChemLevelsUI[0].GetComponent<MeshRenderer>().material.color = new Vector4(0.63f, 0.31f, 0.67f, 1);
+        ChemLevelsUI[1].GetComponent<MeshRenderer>().material.color = new Vector4(0.72f, 0.43f, 0.43f, 1);
+        ChemLevelsUI[2].GetComponent<MeshRenderer>().material.color = new Vector4(0.44f, 0.43f, 0.73f, 1);
+        ChemLevelsUI[3].GetComponent<MeshRenderer>().material.color = new Vector4(0.66f, 0.69f, 0.28f, 1);
+        ChemLevelsUI[4].GetComponent<MeshRenderer>().material.color = new Vector4(0.31f, .6f, 0.39f, 1);
+        ChemLevelsUI[5].GetComponent<MeshRenderer>().material.color = Color.black;
     }
 }

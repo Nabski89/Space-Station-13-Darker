@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -4718929374748547611, guid: c84df7051b43a394a922547d2d33b413, type: 3}
       propertyPath: PillNumber
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1168780388416075831, guid: c84df7051b43a394a922547d2d33b413, type: 3}
       propertyPath: m_Name

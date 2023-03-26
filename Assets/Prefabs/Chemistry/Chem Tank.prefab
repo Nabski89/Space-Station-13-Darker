@@ -178,7 +178,7 @@ GameObject:
   - component: {fileID: 7964584883504756632}
   - component: {fileID: 4717590144698040746}
   m_Layer: 0
-  m_Name: TankFill (2)
+  m_Name: TankFill (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -197,7 +197,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3086060659432655304}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7964584883504756632
 MeshFilter:
@@ -343,6 +343,7 @@ GameObject:
   - component: {fileID: 7690292983428356134}
   - component: {fileID: 7347529786595451980}
   - component: {fileID: 6612118810301425776}
+  - component: {fileID: 4059026149949266003}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -415,6 +416,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4059026149949266003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5071762707390139631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72a0e65e26db8dd43b1060e1aa6cf8a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpinSpeed: 0
 --- !u!1 &6068629048263517450
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,7 +441,7 @@ GameObject:
   - component: {fileID: 9186144864260104581}
   - component: {fileID: 1467950602884670213}
   m_Layer: 0
-  m_Name: TankFill (1)
+  m_Name: TankFill (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -446,7 +460,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3086060659432655304}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &9186144864260104581
 MeshFilter:
@@ -533,8 +547,8 @@ Transform:
   - {fileID: 2061460354874862182}
   - {fileID: 7690292983428356134}
   - {fileID: 4013745372237277615}
-  - {fileID: 233290934414533920}
   - {fileID: 1283967330414197129}
+  - {fileID: 233290934414533920}
   - {fileID: 1813076306908434114}
   - {fileID: 2741139155416470504}
   - {fileID: 872145416165963166}
@@ -583,7 +597,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 880774007180850119, guid: a048dd5250970cb43818debbe83e01b8, type: 3}
-  - {fileID: 2100000, guid: 0518a4d95f1a51d45b205d4eff25dd89, type: 2}
+  - {fileID: 2100000, guid: 9357b5ec386031342a5c78b9e825515b, type: 2}
   - {fileID: 2100000, guid: 0518a4d95f1a51d45b205d4eff25dd89, type: 2}
   - {fileID: -6586961225737035402, guid: 861610c8cc358e44a9d4d80c456f2fb3, type: 3}
   m_StaticBatchInfo:
@@ -632,9 +646,12 @@ MonoBehaviour:
   - 0
   - 0
   ChemLevelsUI:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 4013745372237277615}
+  - {fileID: 1283967330414197129}
+  - {fileID: 233290934414533920}
+  - {fileID: 1813076306908434114}
+  - {fileID: 2741139155416470504}
+  - {fileID: 872145416165963166}
   RecipeAttempt: 0
   InteractionTime: 0
 --- !u!1 &6841831178266558158

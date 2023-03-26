@@ -50,8 +50,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a623d99a5535c14f9af534d698ccbc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ObjectCollider: {fileID: 0}
-  m_ObjectCollider2: {fileID: 0}
+  m_ObjectCollider: {fileID: 7520701942215117390}
+  m_ObjectCollider2: {fileID: 2942495701624242894}
   OpenSoundEffect: {fileID: 1747567267099290711, guid: 03cdbd237de24ec47a7045a7929769e5, type: 3}
   CloseSoundEffect: {fileID: 6458758312047536834, guid: 0cb1414b65ba1a84c80a3c4e7f2fbe07, type: 3}
 --- !u!95 &1910004107865989874
