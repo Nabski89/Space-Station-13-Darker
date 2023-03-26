@@ -26,7 +26,7 @@ PrefabInstance:
     - target: {fileID: 4421338126942305378, guid: 5479f267e61424049b52188151228f57, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 8f91f599cfcbfa7439b59d42cd03e7d4, type: 2}
+      objectReference: {fileID: 2100000, guid: 9357b5ec386031342a5c78b9e825515b, type: 2}
     - target: {fileID: 5148518483815006394, guid: 5479f267e61424049b52188151228f57, type: 3}
       propertyPath: Icon
       value: 

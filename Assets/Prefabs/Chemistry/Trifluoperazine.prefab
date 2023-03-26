@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: PillNumber
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 559540267088898448, guid: c84df7051b43a394a922547d2d33b413, type: 3}
+      propertyPath: Icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 5cf717b39836f164695330f26ef0cf6d, type: 3}
     - target: {fileID: 1168780388416075831, guid: c84df7051b43a394a922547d2d33b413, type: 3}
       propertyPath: m_Name
       value: Trifluoperazine

@@ -63,6 +63,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pie (Unfinished)
       objectReference: {fileID: 0}
+    - target: {fileID: 1653695824123492140, guid: e221e9fd0da189f4f8f7882722b5f873, type: 3}
+      propertyPath: ItemRequired
+      value: 112
+      objectReference: {fileID: 0}
     - target: {fileID: 8800781016761786304, guid: e221e9fd0da189f4f8f7882722b5f873, type: 3}
       propertyPath: m_Mesh
       value: 

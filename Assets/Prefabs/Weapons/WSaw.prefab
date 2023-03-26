@@ -35,6 +35,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: WSaw
       objectReference: {fileID: 0}
+    - target: {fileID: 1900853462912720702, guid: b8636571f024806449b60a60de9e8300, type: 3}
+      propertyPath: m_Size.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900853462912720702, guid: b8636571f024806449b60a60de9e8300, type: 3}
+      propertyPath: m_Size.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900853462912720702, guid: b8636571f024806449b60a60de9e8300, type: 3}
+      propertyPath: m_Size.z
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900853462912720702, guid: b8636571f024806449b60a60de9e8300, type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900853462912720702, guid: b8636571f024806449b60a60de9e8300, type: 3}
+      propertyPath: m_Center.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900853462912720702, guid: b8636571f024806449b60a60de9e8300, type: 3}
+      propertyPath: m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4074172914091886684, guid: b8636571f024806449b60a60de9e8300, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -83,5 +107,9 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1504137610994509186, guid: dc9c35b8581e8c6429eeb04d57f45e1e, type: 3}
+    - target: {fileID: 7469087633088753769, guid: b8636571f024806449b60a60de9e8300, type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8636571f024806449b60a60de9e8300, type: 3}

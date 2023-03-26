@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: PillNumber
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 559540267088898448, guid: c84df7051b43a394a922547d2d33b413, type: 3}
+      propertyPath: Icon
+      value: 
+      objectReference: {fileID: 21300000, guid: f8cfd6bc471b0fc46b762d601e971e5a, type: 3}
     - target: {fileID: 1168780388416075831, guid: c84df7051b43a394a922547d2d33b413, type: 3}
       propertyPath: m_Name
       value: Methamphetamine

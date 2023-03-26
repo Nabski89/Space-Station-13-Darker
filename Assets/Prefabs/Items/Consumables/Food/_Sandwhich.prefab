@@ -47,6 +47,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[4]
       value: 
       objectReference: {fileID: 2947230280197879067, guid: dc9c35b8581e8c6429eeb04d57f45e1e, type: 3}
+    - target: {fileID: 5685884120186989311, guid: c4780c3eb3c53b94fb5007aefcd65bde, type: 3}
+      propertyPath: Icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 668d6ea8fc3514e4298b502974ac4a53, type: 3}
     - target: {fileID: 6418724590761048920, guid: c4780c3eb3c53b94fb5007aefcd65bde, type: 3}
       propertyPath: m_Name
       value: _Sandwhich
@@ -97,3 +101,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4780c3eb3c53b94fb5007aefcd65bde, type: 3}
+--- !u!1 &8833027430070952116 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6418724590761048920, guid: c4780c3eb3c53b94fb5007aefcd65bde, type: 3}
+  m_PrefabInstance: {fileID: 2559966139866766316}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4819924156787525421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8833027430070952116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e39f844e060df934a8ed10944a5dc772, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

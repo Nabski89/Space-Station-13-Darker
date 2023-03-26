@@ -21,6 +21,6 @@ public class ItemSpawn : MonoBehaviour
             //maybe with a while loop and it's 50/50 odds each time?
             //turns out I put this on the object itself
         }
-        Destroy(gameObject, 2);
+      //  Destroy(gameObject, 2);
     }
 }

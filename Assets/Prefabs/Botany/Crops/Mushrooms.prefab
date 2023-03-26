@@ -15,6 +15,14 @@ PrefabInstance:
       propertyPath: Seeds
       value: 
       objectReference: {fileID: 6112531135696693906, guid: 2cc7f1c1675f775428917455caea7fcd, type: 3}
+    - target: {fileID: 1781062171733489019, guid: fcd3df62a0c4d5f45954b765a6cd5036, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 1781062171733489019, guid: fcd3df62a0c4d5f45954b765a6cd5036, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: -6629797300637803691, guid: ab7fed16f0d721340b628913f4efea57, type: 3}
     - target: {fileID: 2507273763070105159, guid: fcd3df62a0c4d5f45954b765a6cd5036, type: 3}
       propertyPath: m_Name
       value: Mushrooms

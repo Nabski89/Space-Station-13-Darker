@@ -31,6 +31,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: WToolbox
       objectReference: {fileID: 0}
+    - target: {fileID: 1900853462912720702, guid: b8636571f024806449b60a60de9e8300, type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900853462912720702, guid: b8636571f024806449b60a60de9e8300, type: 3}
+      propertyPath: m_Center.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900853462912720702, guid: b8636571f024806449b60a60de9e8300, type: 3}
+      propertyPath: m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4074172914091886684, guid: b8636571f024806449b60a60de9e8300, type: 3}
       propertyPath: m_RootOrder
       value: 0

@@ -27,6 +27,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[2]
       value: 
       objectReference: {fileID: 2100000, guid: 3fedaf825b87fe64099a283b2f99f4ca, type: 2}
+    - target: {fileID: 4741467049571648860, guid: 9cfe7cbd964784242b61b5ee2cd85932, type: 3}
+      propertyPath: Icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 123515fe28d6f6545bb5cbc724b7faba, type: 3}
     - target: {fileID: 6212335613922235643, guid: 9cfe7cbd964784242b61b5ee2cd85932, type: 3}
       propertyPath: m_Name
       value: Happy Pill

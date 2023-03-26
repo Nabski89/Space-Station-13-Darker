@@ -18,11 +18,19 @@ PrefabInstance:
     - target: {fileID: 1654116259743463271, guid: 5479f267e61424049b52188151228f57, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 8476381493779723895, guid: 861610c8cc358e44a9d4d80c456f2fb3, type: 3}
+      objectReference: {fileID: 8146081929449579517, guid: 861610c8cc358e44a9d4d80c456f2fb3, type: 3}
+    - target: {fileID: 4421338126942305378, guid: 5479f267e61424049b52188151228f57, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5ef3022cabead6443a8c257a028b9fc0, type: 2}
+    - target: {fileID: 4421338126942305378, guid: 5479f267e61424049b52188151228f57, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9357b5ec386031342a5c78b9e825515b, type: 2}
     - target: {fileID: 5148518483815006394, guid: 5479f267e61424049b52188151228f57, type: 3}
       propertyPath: Icon
       value: 
-      objectReference: {fileID: 21300000, guid: 9f3972a6f6944894c8807baa6088e262, type: 3}
+      objectReference: {fileID: 21300000, guid: 3d7bb04f72c94554193b9725ef763ef2, type: 3}
     - target: {fileID: 5803032374496481565, guid: 5479f267e61424049b52188151228f57, type: 3}
       propertyPath: m_Name
       value: Eggplant

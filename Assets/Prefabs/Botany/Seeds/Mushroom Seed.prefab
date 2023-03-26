@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 654613245366126498, guid: 4ebf09c67ea4a984e975e7395c741c4d, type: 3}
+      propertyPath: CustomHappening
+      value: 
+      objectReference: {fileID: 8180511715434666222, guid: a69fafdf208309e48a149d836d0bbab0, type: 3}
     - target: {fileID: 3892268303238028986, guid: 4ebf09c67ea4a984e975e7395c741c4d, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
@@ -18,7 +22,7 @@ PrefabInstance:
     - target: {fileID: 5488925562948362850, guid: 4ebf09c67ea4a984e975e7395c741c4d, type: 3}
       propertyPath: Icon
       value: 
-      objectReference: {fileID: 21300000, guid: da201b769de587041a4f39b821058b98, type: 3}
+      objectReference: {fileID: 21300000, guid: 32810b4d43bae7c47a12e156f4870d76, type: 3}
     - target: {fileID: 6617795343352263621, guid: 4ebf09c67ea4a984e975e7395c741c4d, type: 3}
       propertyPath: m_Name
       value: Mushroom Seed

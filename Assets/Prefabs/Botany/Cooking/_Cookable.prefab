@@ -75,6 +75,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2521355763786845931, guid: 05bb3af016dc4614dbe5185b32518713, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3397155809133471429, guid: 05bb3af016dc4614dbe5185b32518713, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -88,8 +92,16 @@ PrefabInstance:
       value: _Cookable
       objectReference: {fileID: 0}
     - target: {fileID: 3779306396036170641, guid: 05bb3af016dc4614dbe5185b32518713, type: 3}
+      propertyPath: DestroyOnUse
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3779306396036170641, guid: 05bb3af016dc4614dbe5185b32518713, type: 3}
       propertyPath: ObjectOneTimeUse
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3779306396036170641, guid: 05bb3af016dc4614dbe5185b32518713, type: 3}
+      propertyPath: <InteractionTime>k__BackingField
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6387079569167494013, guid: 05bb3af016dc4614dbe5185b32518713, type: 3}
       propertyPath: m_Mesh
@@ -97,3 +109,22 @@ PrefabInstance:
       objectReference: {fileID: -2146039058316279953, guid: ab7fed16f0d721340b628913f4efea57, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05bb3af016dc4614dbe5185b32518713, type: 3}
+--- !u!1 &1640468446884580516 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3766643091956480025, guid: 05bb3af016dc4614dbe5185b32518713, type: 3}
+  m_PrefabInstance: {fileID: 2486497940302230717}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3320714837716293686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640468446884580516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 328b45220fad7ab42abdea0775078101, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WhatToMove: {fileID: 1640468446884580516}
+  HowMuchToMove: {x: 0, y: 1.2, z: 0}

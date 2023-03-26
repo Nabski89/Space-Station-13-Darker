@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3211114244540364556
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4688265354806827376}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4688265354806827376
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3211114244540364556}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7510409029206913964}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &7692843230560687797
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67,9 +98,18 @@ PrefabInstance:
       propertyPath: WhatHappens
       value: 
       objectReference: {fileID: 8865271965387415852, guid: 4dcb460768a17d84fa1a8baefb94381a, type: 3}
+    - target: {fileID: 1653695824123492140, guid: e221e9fd0da189f4f8f7882722b5f873, type: 3}
+      propertyPath: ItemRequired
+      value: 114
+      objectReference: {fileID: 0}
     - target: {fileID: 8800781016761786304, guid: e221e9fd0da189f4f8f7882722b5f873, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: -4595624381922604983, guid: ab7fed16f0d721340b628913f4efea57, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e221e9fd0da189f4f8f7882722b5f873, type: 3}
+--- !u!4 &7510409029206913964 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 213970532156384537, guid: e221e9fd0da189f4f8f7882722b5f873, type: 3}
+  m_PrefabInstance: {fileID: 7692843230560687797}
+  m_PrefabAsset: {fileID: 0}

@@ -4,18 +4,7 @@ using UnityEngine;
 
 public class Consumable : MonoBehaviour
 {
-    void Update()
-    {
-        {
-            if (Input.GetMouseButtonDown(0))
-            {
-                UseConsumable();
-            }
-        }
-    }
-
-
-    void UseConsumable()
+    public void UseConsumable()
     {
         CharStats Stats = GetComponentInParent<CharStats>();
         Stats.HP += 5;

@@ -10,11 +10,6 @@ public class ChangeMovePosition : MonoBehaviour
     void Start()
     {
         WhatToMove.transform.position += HowMuchToMove;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        Destroy(this);
     }
 }

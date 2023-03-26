@@ -16,9 +16,19 @@ public class Inventory : MonoBehaviour
 
     void Update()
     {
+        CheckConsumable();
         UpdateActiveSlot();
         UpdateDropping();
 
+    }
+    void CheckConsumable()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Consumable EatThis = GetComponentInChildren<Consumable>();
+            if (EatThis != null)
+                EatThis.UseConsumable();
+        }
     }
     void UpdateActiveSlot()
     {
@@ -70,7 +80,7 @@ public class Inventory : MonoBehaviour
             item.gameObject.SetActive(true);
             item.transform.position = this.transform.position + Vector3.up * 1.5f + this.transform.forward * .5f; // xd i love hardcoding
             Rigidbody rb = item.gameObject.AddComponent<Rigidbody>();
-            rb.AddForce((this.transform.forward * 300 + this.transform.up * 100)*ThrowPower/3);
+            rb.AddForce((this.transform.forward * 300 + this.transform.up * 100) * ThrowPower / 3);
             item.GetComponent<Collider>().isTrigger = false;
             //disable consumables
             if (item.GetComponent<Consumable>() != null)
