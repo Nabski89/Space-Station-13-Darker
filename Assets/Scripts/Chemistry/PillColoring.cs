@@ -31,12 +31,15 @@ public class PillColoring : MonoBehaviour
         {
             case 0:
                 Selection = (ChemTank.Recipe[PillNumber] / 10) % 10;
+                            Debug.Log((ChemTank.Recipe[PillNumber] / 10) % 10);
                 break;
             case 1:
                 Selection = ChemTank.Recipe[PillNumber] % 10;
+                Debug.Log(ChemTank.Recipe[PillNumber] % 10);
                 break;
             case 2:
                 Selection = ChemTank.Recipe[PillNumber] / 100;
+                Debug.Log(ChemTank.Recipe[PillNumber] / 100);
                 break;
         }
         switch (Selection)
@@ -48,7 +51,7 @@ public class PillColoring : MonoBehaviour
                 Pill.materials[MatSlot].color = new Vector4(0.72f, 0.43f, 0.43f, 1);
                 break;
             case 3:
-                Pill.materials[MatSlot].color = new Vector4(0.44f, 0.43f, 0.73f, 1);
+                Pill.materials[MatSlot].color = new Vector4(0.72f, 0.43f, 0.43f, 1);
                 break;
             case 4:
                 Pill.materials[MatSlot].color = new Vector4(0.66f, 0.69f, 0.28f, 1);

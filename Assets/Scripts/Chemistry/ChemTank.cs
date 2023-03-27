@@ -37,6 +37,7 @@ public class ChemTank : MonoBehaviour
                 Digit3 = Random.Range(0, ChemLevels.Length);
                 Recipe[i] = i * 100 + Digit2 * 10 + Digit3 + 111;
             }
+            Debug.Log("The recpie for pill "+ i+ " is: "+ Recipe[i]);
             i += 1;
         }
     }
@@ -93,17 +94,16 @@ public class ChemTank : MonoBehaviour
             {
                 if (Recipe[j] == RecipeAttempt)
                 {
-                    Instantiate(Pills[j], transform.position, transform.rotation);
+                    Instantiate(Pills[j], transform.position+(3*Vector3.forward), transform.rotation);
                     Debug.Log("Made a " + Pills[j] + "Pill with purity: " + purity);
                 }
                 j += 1;
                 if (j == Recipe.Length)
                     RecipeAttempt = 0;
             }
-            Debug.Log("Failed to make a pill");
         }
         else
-            Debug.Log("Failed to make a pill");
+            Debug.Log("Failed to make a pill due to overflow");
     }
 
 
