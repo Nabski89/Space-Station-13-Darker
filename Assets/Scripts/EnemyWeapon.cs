@@ -5,16 +5,7 @@ using UnityEngine;
 public class EnemyWeapon : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    public GameObject HitSoundEffect;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -25,6 +16,8 @@ public class EnemyWeapon : MonoBehaviour
             Debug.Log(transform.name + " AttackedPlayer");
             HPCheck.HP -= 10;
             enabled = false;
+            if (HitSoundEffect != null)
+                Instantiate(HitSoundEffect, transform.position, transform.rotation);
         }
     }
 }
