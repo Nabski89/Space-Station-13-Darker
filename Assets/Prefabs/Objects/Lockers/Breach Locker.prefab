@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5729787338042809057
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3680038713806188548, guid: 61f62284d0a9f6d419e7adc13a26b945, type: 3}
+      propertyPath: Loot
+      value: 
+      objectReference: {fileID: 1357894791200027382, guid: c6d675748063537408aa59282223be65, type: 3}
+    - target: {fileID: 4765132949553693686, guid: 61f62284d0a9f6d419e7adc13a26b945, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765132949553693686, guid: 61f62284d0a9f6d419e7adc13a26b945, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765132949553693686, guid: 61f62284d0a9f6d419e7adc13a26b945, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765132949553693686, guid: 61f62284d0a9f6d419e7adc13a26b945, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765132949553693686, guid: 61f62284d0a9f6d419e7adc13a26b945, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765132949553693686, guid: 61f62284d0a9f6d419e7adc13a26b945, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765132949553693686, guid: 61f62284d0a9f6d419e7adc13a26b945, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765132949553693686, guid: 61f62284d0a9f6d419e7adc13a26b945, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765132949553693686, guid: 61f62284d0a9f6d419e7adc13a26b945, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765132949553693686, guid: 61f62284d0a9f6d419e7adc13a26b945, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765132949553693686, guid: 61f62284d0a9f6d419e7adc13a26b945, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5314946910212739599, guid: 61f62284d0a9f6d419e7adc13a26b945, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6bb8c349650ec12418ae4647d48580c4, type: 2}
+    - target: {fileID: 5314946910212739599, guid: 61f62284d0a9f6d419e7adc13a26b945, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 70a9046bc121c82489b42e84df14ff2c, type: 2}
+    - target: {fileID: 7218531884389644668, guid: 61f62284d0a9f6d419e7adc13a26b945, type: 3}
+      propertyPath: m_Name
+      value: Breach Locker
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 61f62284d0a9f6d419e7adc13a26b945, type: 3}

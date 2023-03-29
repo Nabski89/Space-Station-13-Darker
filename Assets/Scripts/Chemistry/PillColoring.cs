@@ -31,15 +31,15 @@ public class PillColoring : MonoBehaviour
         {
             case 0:
                 Selection = (ChemTank.Recipe[PillNumber] / 10) % 10;
-                            Debug.Log((ChemTank.Recipe[PillNumber] / 10) % 10);
+        //                    Debug.Log((ChemTank.Recipe[PillNumber] / 10) % 10);
                 break;
             case 1:
                 Selection = ChemTank.Recipe[PillNumber] % 10;
-                Debug.Log(ChemTank.Recipe[PillNumber] % 10);
+         //       Debug.Log(ChemTank.Recipe[PillNumber] % 10);
                 break;
             case 2:
                 Selection = ChemTank.Recipe[PillNumber] / 100;
-                Debug.Log(ChemTank.Recipe[PillNumber] / 100);
+          //      Debug.Log(ChemTank.Recipe[PillNumber] / 100);
                 break;
         }
         switch (Selection)
