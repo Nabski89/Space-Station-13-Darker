@@ -14,11 +14,11 @@ PrefabInstance:
     - target: {fileID: -2845745387856695470, guid: 0a7fcaa7cd788b7449a6fc075defbd84, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: -3258212522785882450, guid: 5835d5e15624aa04bb6e625e2e824c31, type: 3}
+      objectReference: {fileID: 880774007180850119, guid: a048dd5250970cb43818debbe83e01b8, type: 3}
     - target: {fileID: -2845745387856695470, guid: 0a7fcaa7cd788b7449a6fc075defbd84, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: f54f056ecdff0a840a6706cc9c20b0ca, type: 2}
+      objectReference: {fileID: -3846018093981099296, guid: dc9c35b8581e8c6429eeb04d57f45e1e, type: 3}
     - target: {fileID: -2845745387856695470, guid: 0a7fcaa7cd788b7449a6fc075defbd84, type: 3}
       propertyPath: m_Materials.Array.data[2]
       value: 
@@ -27,6 +27,18 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 585727424190991649, guid: 3464b45a83de5804296c1a3ccf965288, type: 3}
+    - target: {fileID: 4535620055791224994, guid: 0a7fcaa7cd788b7449a6fc075defbd84, type: 3}
+      propertyPath: m_Size.x
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 4535620055791224994, guid: 0a7fcaa7cd788b7449a6fc075defbd84, type: 3}
+      propertyPath: m_Size.y
+      value: 0.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4535620055791224994, guid: 0a7fcaa7cd788b7449a6fc075defbd84, type: 3}
+      propertyPath: m_Size.z
+      value: 0.14
+      objectReference: {fileID: 0}
     - target: {fileID: 5404578968843427108, guid: 0a7fcaa7cd788b7449a6fc075defbd84, type: 3}
       propertyPath: equipmentSlot
       value: 5

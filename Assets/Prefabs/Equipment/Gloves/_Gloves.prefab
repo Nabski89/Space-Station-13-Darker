@@ -35,6 +35,18 @@ PrefabInstance:
       propertyPath: m_Size.z
       value: 0.25
       objectReference: {fileID: 0}
+    - target: {fileID: 4535620055791224994, guid: 0a7fcaa7cd788b7449a6fc075defbd84, type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4535620055791224994, guid: 0a7fcaa7cd788b7449a6fc075defbd84, type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4535620055791224994, guid: 0a7fcaa7cd788b7449a6fc075defbd84, type: 3}
+      propertyPath: m_Center.z
+      value: -0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 5404578968843427108, guid: 0a7fcaa7cd788b7449a6fc075defbd84, type: 3}
       propertyPath: equipmentSlot
       value: 1

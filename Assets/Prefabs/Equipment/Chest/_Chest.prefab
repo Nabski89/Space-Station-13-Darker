@@ -7,6 +7,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4535620055791224994, guid: 0a7fcaa7cd788b7449a6fc075defbd84, type: 3}
+      propertyPath: m_Size.x
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4535620055791224994, guid: 0a7fcaa7cd788b7449a6fc075defbd84, type: 3}
+      propertyPath: m_Size.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4535620055791224994, guid: 0a7fcaa7cd788b7449a6fc075defbd84, type: 3}
+      propertyPath: m_Size.z
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 5404578968843427108, guid: 0a7fcaa7cd788b7449a6fc075defbd84, type: 3}
       propertyPath: equipmentSlot
       value: 3

@@ -1,12 +1,24 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &1604771519239466137
+--- !u!1001 &8955934625295957721
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 811728223626205308, guid: 9f24a38cb3717d74d962e36eedcd8bb2, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 811728223626205308, guid: 9f24a38cb3717d74d962e36eedcd8bb2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -2372380289074245050, guid: bae42c9820928e34a8d4db22cdc610aa, type: 3}
+    - target: {fileID: 811728223626205308, guid: 9f24a38cb3717d74d962e36eedcd8bb2, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: -2372380289074245050, guid: bae42c9820928e34a8d4db22cdc610aa, type: 3}
     - target: {fileID: 3878217263394792526, guid: 9f24a38cb3717d74d962e36eedcd8bb2, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -53,7 +65,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4091811099304356697, guid: 9f24a38cb3717d74d962e36eedcd8bb2, type: 3}
       propertyPath: m_Name
-      value: _Head
+      value: Helmet
       objectReference: {fileID: 0}
+    - target: {fileID: 4273513051662589543, guid: 9f24a38cb3717d74d962e36eedcd8bb2, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 6041377522765385347, guid: 3464b45a83de5804296c1a3ccf965288, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f24a38cb3717d74d962e36eedcd8bb2, type: 3}
