@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class CharStats : MonoBehaviour
 {
+    public float Strength = 10;
+    public float Agility = 10;
+    public float Knowledge = 10;
+    public float Resourcefulness = 10;
     public float HPMax = 100;
     public float HP = 50;
     public float HealOT = 5;
@@ -13,6 +17,7 @@ public class CharStats : MonoBehaviour
     public float CharDamageMod = 1.00f;
     public float CharDamageModTemp = 1.00f;
     bool DEAD = false;
+    public bool InSpace = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +27,11 @@ public class CharStats : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (InSpace == true)
+        {
+            //need to do a minus space protection where level 1 is suit, 2 is helmet, and 3 is a consumable for your oxygen,
+            HP -= 5 * Time.deltaTime;
+        }
         //delayed healing effects
         if (HealOT > 0)
         {

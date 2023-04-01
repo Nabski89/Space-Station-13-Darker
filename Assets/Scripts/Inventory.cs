@@ -17,9 +17,19 @@ public class Inventory : MonoBehaviour
     void Update()
     {
         CheckConsumable();
+        CheckEquip();
         UpdateActiveSlot();
         UpdateDropping();
 
+    }
+    void CheckEquip()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Equipment EquipThis = GetComponentInChildren<Equipment>();
+            if (EquipThis != null)
+                EquipThis.Equip();
+        }
     }
     void CheckConsumable()
     {
@@ -65,7 +75,7 @@ public class Inventory : MonoBehaviour
             Items[ActiveSlot] = null;
             OnInventoryUpdated();
         }
-*/
+    */
         if (Input.GetMouseButtonDown(1))
         {
             ThrowPower = 0;
