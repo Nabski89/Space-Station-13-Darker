@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 4654282849982731933}
   - component: {fileID: 3968020526626364197}
   - component: {fileID: 1233958162878112487}
-  m_Layer: 0
-  m_Name: Vending Machine
+  - component: {fileID: -4812095857295731979}
+  m_Layer: 8
+  m_Name: _Vending Machine Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -101,3 +102,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000005, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &-4812095857295731979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3202604139292214777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dafd067570744604cb270e19d3e73545, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
