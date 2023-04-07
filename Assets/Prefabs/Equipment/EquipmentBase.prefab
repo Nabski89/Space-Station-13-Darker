@@ -103,6 +103,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   equipmentSlot: 0
   Icon: {fileID: 0}
+  StatIncrease:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
 --- !u!114 &-3590387136277768524
 MonoBehaviour:
   m_ObjectHideFlags: 0

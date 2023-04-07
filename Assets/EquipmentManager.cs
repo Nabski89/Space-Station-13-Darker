@@ -59,10 +59,16 @@ public class EquipmentManager : MonoBehaviour
         {
             GameObject oldEquipment = Instantiate(currentEquipment[slotIndex], Character.transform.position + Vector3.up * 1.5f + Character.transform.forward * .5f, Quaternion.identity);
             oldEquipment.transform.localScale = Vector3.one;
-            oldEquipment.gameObject.AddComponent<Rigidbody>();
+
+            //this is needed because the default equipments are not properly picked up
+            if (oldEquipment.gameObject.GetComponent<Rigidbody>() == null)
+                oldEquipment.gameObject.AddComponent<Rigidbody>();
             oldEquipment.GetComponent<Collider>().isTrigger = false;
+            oldEquipment.GetComponent<Equipment>().ModifyStatsOnEquip(-1, Character);
             Destroy(currentEquipment[slotIndex]);
             currentEquipment[slotIndex] = null;
+
+
         }
     }
 }

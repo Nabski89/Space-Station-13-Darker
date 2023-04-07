@@ -12,7 +12,7 @@ public class Item : MonoBehaviour, IInteractable
     public int WeaponType = 0;
     bool NoMoreUpgrades = false;
 
-    void Start()
+    void Awake()
     {
         transform.name = transform.name.Replace("(Clone)", "").Trim();
         QualityUpgrade();
