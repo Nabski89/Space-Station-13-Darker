@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class StashCarryOver : MonoBehaviour
 {
-    public static GameObject StashedItem;
+    public static GameObject[] StashedItem = new GameObject[1];
 
     public static StashCarryOver Instance;
 

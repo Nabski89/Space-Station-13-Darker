@@ -23,7 +23,6 @@ public class Equipment : MonoBehaviour
     }
     void Start()
     {
-        ItemBase.Quality = Random.Range(0, StatIncrease.Length);
         while (Quality < ItemBase.Quality)
         {
             int j = Random.Range(0, StatIncrease.Length);

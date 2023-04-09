@@ -10,7 +10,7 @@ public class Item : MonoBehaviour, IInteractable
     Collider m_ObjectCollider;
     //This will be used to determine what attack type it falls under and assign it. Current max is three for 0Axe 1Dagger 2Sword
     public int WeaponType = 0;
-    bool NoMoreUpgrades = false;
+    public bool NoMoreUpgrades;
 
     void Awake()
     {

@@ -8,13 +8,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 811728223626205308, guid: 9f24a38cb3717d74d962e36eedcd8bb2, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 811728223626205308, guid: 9f24a38cb3717d74d962e36eedcd8bb2, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: -2372380289074245050, guid: 5835d5e15624aa04bb6e625e2e824c31, type: 3}
+      objectReference: {fileID: 2100000, guid: 0518a4d95f1a51d45b205d4eff25dd89, type: 2}
     - target: {fileID: 811728223626205308, guid: 9f24a38cb3717d74d962e36eedcd8bb2, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 3fedaf825b87fe64099a283b2f99f4ca, type: 2}
+      objectReference: {fileID: 2100000, guid: 2d83afc50c2ae8f40b17ff251733e5a9, type: 2}
+    - target: {fileID: 811728223626205308, guid: 9f24a38cb3717d74d962e36eedcd8bb2, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: -3258212522785882450, guid: a048dd5250970cb43818debbe83e01b8, type: 3}
     - target: {fileID: 2156756711987634586, guid: 9f24a38cb3717d74d962e36eedcd8bb2, type: 3}
       propertyPath: Icon
       value: 

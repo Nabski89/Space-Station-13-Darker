@@ -21,11 +21,21 @@ public class EquipmentManager : MonoBehaviour
         {
             instance.EquipUIDoll = EquipUIDoll;
             instance.Character = Character;
+            for (int i = 0; i < currentEquipment.Length; i++)
+            {
+                if (instance.currentEquipment[i] != null)
+                {
+                    instance.currentEquipment[i].GetComponent<Equipment>().ModifyStatsOnEquip(1, Character);
+                    EquipUIDoll.EquipDollItem(i, instance.currentEquipment[i]);
+                }
+            }
+            Destroy(gameObject);
         }
     }
 
     void Start()
     {
+        Debug.Log("Same thing but in start?");
         currentEquipment = new GameObject[System.Enum.GetNames(typeof(EquipmentSlot)).Length];
         // Fill the current equipment array with default equipment if the relevant bool is checked
         for (int i = 0; i < defaultEquipment.Length; i++)
@@ -44,7 +54,7 @@ public class EquipmentManager : MonoBehaviour
 
         if (currentEquipment[slotIndex] != null)
         {
-            Debug.LogWarning("Equipping " + equipment.name + " to " + slot.ToString() + " while " + currentEquipment[slotIndex].name + " is equipped. Unequipping " + currentEquipment[slotIndex].name);
+            Debug.Log("Equipping " + equipment.name + " to " + slot.ToString() + " while " + currentEquipment[slotIndex].name + " is equipped. Unequipping " + currentEquipment[slotIndex].name);
         }
         GameObject newEquipment = Instantiate(equipment, transform);
         currentEquipment[slotIndex] = newEquipment;
@@ -67,8 +77,18 @@ public class EquipmentManager : MonoBehaviour
             oldEquipment.GetComponent<Equipment>().ModifyStatsOnEquip(-1, Character);
             Destroy(currentEquipment[slotIndex]);
             currentEquipment[slotIndex] = null;
-
-
         }
     }
+    public void RefreshEquip(GameObject equipment, EquipmentSlot slot)
+    {
+        int slotIndex = (int)slot;
+        if (currentEquipment[slotIndex] != null)
+        {
+            Debug.Log("Equipping " + equipment.name + " to " + slot.ToString() + " while " + currentEquipment[slotIndex].name + " is equipped. Unequipping " + currentEquipment[slotIndex].name);
+        }
+        GameObject newEquipment = Instantiate(equipment, transform);
+        currentEquipment[slotIndex] = newEquipment;
+        EquipUIDoll.EquipDollItem(slotIndex, newEquipment);
+    }
+
 }

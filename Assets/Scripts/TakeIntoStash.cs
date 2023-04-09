@@ -9,7 +9,7 @@ public class TakeIntoStash : MonoBehaviour, IInteractable
 
     public void Interact(Interact source, CharController Character)
     {
-        if (StashCarryOver.StashedItem == null)
+        if (StashCarryOver.StashedItem[0] == null)
         {
             Inventory CharacterInventory = Character.GetComponent<Inventory>();
             if (CharacterInventory.Items[CharacterInventory.ActiveSlot] != null)
@@ -17,7 +17,7 @@ public class TakeIntoStash : MonoBehaviour, IInteractable
                 Item HeldItem = CharacterInventory.Items[CharacterInventory.ActiveSlot].GetComponent<Item>();
                 if (HeldItem != null)
                 {
-                    StashCarryOver.StashedItem = Instantiate(HeldItem.gameObject, StashCarryOver.Instance.transform);
+                    StashCarryOver.StashedItem[0] = Instantiate(HeldItem.gameObject, StashCarryOver.Instance.transform);
                     CharacterInventory.UseUpItem();
                     Chest TheChest = GetComponent<Chest>();
                     //    TheChest.enabled = true;
@@ -27,9 +27,9 @@ public class TakeIntoStash : MonoBehaviour, IInteractable
         }
         else
         {
-            Instantiate(StashCarryOver.StashedItem, (transform.position + transform.up * 2), transform.rotation);
-            Destroy(StashCarryOver.StashedItem);
-            StashCarryOver.StashedItem = null;
+            Instantiate(StashCarryOver.StashedItem[0], (transform.position + transform.up * 2), transform.rotation);
+            Destroy(StashCarryOver.StashedItem[0]);
+            StashCarryOver.StashedItem[0] = null;
         }
     }
 }
